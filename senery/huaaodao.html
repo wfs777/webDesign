@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../css/hometown_css.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/sene.css"/>
+		<title>花岙岛</title>
+	</head>
+	<body>
+		<div id="top_line">
+			<div class="top_left">
+				<a href="#">welcome to 象山</a>
+			</div>
+			<form action="demo.html" onsubmit="return checkForm()">
+			        <div id="login-header">
+			        	<tr>
+			        		 <td ><a href="javascript:void(0)">注册</a><a id="adminBtn" href="javascript:void(0)">登录|</a></td>
+			        	</tr>
+			        </div>
+			        <!-- 登陆框主体 -->
+			        <div id="login" class="login">
+			            <!-- 登陆框标题 -->
+			            <div id="login-title" class="login-title">
+			                登陆
+			                <span><a id="closeBtn" href="javascript:void(0)">关闭</a></span>
+			            </div>
+			            <!-- 登陆框表单 -->
+			            <div id="login-form">
+			                <div class="login-input">
+			                    <label>用户名</label>
+			                    <input id="value"   onkeyup="hint()" type="text" Name="Userame" placeholder="用户名" class="list-input"/>
+			                    <span id="hint" style="color: #808080;">用户名长度不能小于六</span>
+			                </div>
+							<div class="login-input">
+							    <label>日期</label>
+							    <input id="date_value"   onkeyup="checkDate()" type="text" name="date" placeholder="日期" class="list-input"/>
+							    <span id="date_hint" style="color: #808080;">日期格式年-月-日</span>
+							</div>
+			                <div class="login-input">
+			                    <label>密码</label>
+			                    <input id="pass_value"   onkeyup="checkPass()" type="password" name="password" placeholder="密码" class="list-input"/>
+			                    <span id="pass_hint" style="color: #808080;">密码长度不能小于六</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>确认密码</label>
+			                    <input id="passpass_value"  onkeyup="checkPassPass()" type="password" name="password" placeholder="确认密码"class="list-input" />
+			                    <span id="passpass_hint" style="color: #808080;">两次密码要一致</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>邮箱</label>
+			                    <input id="email"   onkeyup="emailCheck()" type="email" name="email" placeholder="邮箱" class="list-input"/>
+			                    <span id="email_hint"></span>
+			                </div>
+			                <div class="login-input">
+			                    <label>手机号</label>
+			                    <input id="phone" type="text"   onkeyup="phoneCheck()" Name="Phone" placeholder="手机号"class="list-input">
+			                    <span id="phone_hint"></span>
+			                </div>
+			            </div>
+			            <!-- 登陆框登陆按钮 -->
+			            <input type="submit"  id="loginSubmit" value="提交" class="loginSubmit"/>
+			        </div>
+			
+			        <!-- 遮盖层 -->
+			        <div id="bg" class="bg">sada</div>
+			</form>
+			<script type="text/javascript" src="../js/login.js">
+				</script>
+		</div>
+		
+		<div class="head">
+			<div class="head_img">
+				<img src="../image/cjlu.jpg" height="100" >
+			</div>
+			<div class="head_font" style="font-size: 20px;">
+				<h1>web期末大作业 未方山</h1>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<nav>
+		    <div class="wrap">
+		            <ul class="level">
+		                <li><a href="../hometown-index.html">首页</a></li>
+		                <li>
+		                    <a href="../senery.html">象山美景</a>
+		                    <ul class="two">
+		                        <li><a href="../senery/songlanshan.html" style="color: #474747;">松兰山</a></li>
+		                        <li><a href="../senery/yingshicheng.html" style="color: #474747;">象山影视城</a></li>
+		                        <li><a href="../senery/huaaodao.html" style="color: #474747;">花岙岛</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="../renwen.html">象山人文</a>
+		                    <ul class="two">
+		                        <li><a href="../renwen/mingren.html" style="color: #474747;">象山名人</a></li>
+								<li><a href="../renwen/yishuguan.html" style="color: #474747;">艺术馆</a></li>
+								<li><a href="../renwen/yishuguan.html" style="color: #474747;">塔山遗址</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="../food.html">象山特产与美食</a>
+		                    <ul class="two">
+		                        <li><a href="../food/seafood.html" style="color: #474747;">海鲜</a></li>
+		                        <li><a href="../food/dianxin.html" style="color: #474747;">点心</a></li>
+		                        <li><a href="../food/haichanping.html" style="color: #474747;">海产品</a></li>
+		                    </ul>
+		                </li>
+						<li>
+						    <a href="">时代广场</a>
+						</li>
+		                <li>
+		                    <a href="../profile/frame(key).html">个人简历</a>
+		                </li>
+		            </ul>
+		        </div>
+		    </nav>
+			
+		<div class="clear"></div>
+		<div id="head_pic">
+			<img src="../image/head.jpg" >
+		</div>
+		<div id="main">
+			<div id="m">
+				<h1>花岙岛</h1>
+				<p> 花岙岛海湾众多，地貌雄奇，是抗清名将张苍水聚兵处。长期以来因交通不便，游人罕至。
+花岙岛以自然景观为主，素有“海上仙子国、人间瀛洲城”之称，悬壁陡峭，岩石柱颇多，号称“石林”，岩层或巍然挺拔，或斜倚横仆，尤其是海蚀地貌景观堪称东南一绝：宏伟壮丽的万柱崖、琳仙屿，神奇的洞穴，雄伟的大佛头山，神秘的伟人座像，奇特的大小岬山，五彩鲜艳的鹅卵石铺在了清水岙石滩，环境幽雅秀丽。而张苍水抗清兵营遗址，则又为花岙岛增添了一层历史沧桑感。</p>
+				<hr style="border:2px solid #999999 ;">
+			</div>
+			<div id="container">
+				<div class="left">
+					<h2>节理岩石</h2>
+					<p>花岙岛是以火山岩、海蚀海积地貌景观为主的特色景区，有奇特的火山岩现象和海蚀海积柱状节理群。火山玄武岩柱状节理岩石现象，属于世界上三大火山岩原生地貌之一。这种节理石在整个花岙岛有几十万根之多，是世界上柱状节理石数量最多，形态最为丰富的地方。
+除了花岙岛石林柱状节理群，岛上代表性的地质遗迹景观还有大佛头山柱峰、千年古樟树泥坪、小甲山海蚀拱桥、天作塘、清水湾砾石滩等。</p>
+				<hr >
+				</div>
+				<div class="main_pic">
+					<img src="../image/dao1.jpg">
+				</div>
+				<div class="left">
+					<h2>仙人锯岩</h2>
+					<p>有名的景点是“仙人锯岩”。直插云霄的摩天石柱气势雄伟壮观，色彩明快，布列岸线，排列整齐，景观奇特。同时又受海岸侵蚀作用，岩柱崩塌，又形成有惊心动魄的海蚀崖、海蚀洞、海蚀沟、海蚀柱等景观。山峰北面另有矮小圆端方柱，柱顶部被海水侵蚀成不规则的海蚀穴龛，酷如一柱柱的石珊瑚。由于石柱的柱形、长短、色彩、趋向和所处的位置差异，构成一幅幅极具壮观的景像。</p>
+				<hr >
+				</div>
+				<div class="main_pic">
+					<img src="../image/dao2.jpg">
+				</div>
+				<div class="left">
+					<h2>大佛头</h2>
+					<p>花岙岛北面的丘陵山顶，有一形似大佛端坐，又似大佛之头的山岩。这就是大佛头山柱峰，又叫大佛头。每当变换角度和方位观察时，大佛的形象就会发生变化，出现各种各样的人物形象和奇特景观。 [1] </p>
+				<hr >
+				</div>
+				<div class="main_pic">
+					<img src="../image/dao3.jpg">
+				</div>
+			</div>
+		</div>
+		<div id="bottom">
+			<h1><a href="../senery.html">回到风景首页</a></h1>
+		</div>
+		<div class="clear"></div>
+		<div class="footer">
+			<ul class="foot_list">
+				<a href="javascript:scroll(0,0)"><h1 align="middle" >Copyright © 2021 2000303224 E-mail:rqzhu777@163.com. All rights reserved.</h1></a>
+			</ul>
+		</div>
+	</body>
+</html>

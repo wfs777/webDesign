@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../css/hometown_css.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/sene.css"/>
+		<title>松兰山</title>
+	</head>
+	<body>
+		<div id="top_line">
+			<div class="top_left">
+				<a href="#">welcome to 象山</a>
+			</div>
+			<form action="demo.html" onsubmit="return checkForm()">
+			        <div id="login-header">
+			        	<tr>
+			        		 <td ><a href="javascript:void(0)">注册</a><a id="adminBtn" href="javascript:void(0)">登录|</a></td>
+			        	</tr>
+			        </div>
+			        <!-- 登陆框主体 -->
+			        <div id="login" class="login">
+			            <!-- 登陆框标题 -->
+			            <div id="login-title" class="login-title">
+			                登陆
+			                <span><a id="closeBtn" href="javascript:void(0)">关闭</a></span>
+			            </div>
+			            <!-- 登陆框表单 -->
+			            <div id="login-form">
+			                <div class="login-input">
+			                    <label>用户名</label>
+			                    <input id="value"   onkeyup="hint()" type="text" Name="Userame" placeholder="用户名" class="list-input"/>
+			                    <span id="hint" style="color: #808080;">用户名长度不能小于六</span>
+			                </div>
+							<div class="login-input">
+							    <label>日期</label>
+							    <input id="date_value"   onkeyup="checkDate()" type="text" name="date" placeholder="日期" class="list-input"/>
+							    <span id="date_hint" style="color: #808080;">日期格式年-月-日</span>
+							</div>
+			                <div class="login-input">
+			                    <label>密码</label>
+			                    <input id="pass_value"   onkeyup="checkPass()" type="password" name="password" placeholder="密码" class="list-input"/>
+			                    <span id="pass_hint" style="color: #808080;">密码长度不能小于六</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>确认密码</label>
+			                    <input id="passpass_value"  onkeyup="checkPassPass()" type="password" name="password" placeholder="确认密码"class="list-input" />
+			                    <span id="passpass_hint" style="color: #808080;">两次密码要一致</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>邮箱</label>
+			                    <input id="email"   onkeyup="emailCheck()" type="email" name="email" placeholder="邮箱" class="list-input"/>
+			                    <span id="email_hint"></span>
+			                </div>
+			                <div class="login-input">
+			                    <label>手机号</label>
+			                    <input id="phone" type="text"   onkeyup="phoneCheck()" Name="Phone" placeholder="手机号"class="list-input">
+			                    <span id="phone_hint"></span>
+			                </div>
+			            </div>
+			            <!-- 登陆框登陆按钮 -->
+			            <input type="submit"  id="loginSubmit" value="提交" class="loginSubmit"/>
+			        </div>
+			
+			        <!-- 遮盖层 -->
+			        <div id="bg" class="bg">sada</div>
+			</form>
+			<script type="text/javascript" src="../js/login.js">
+				</script>
+		</div>
+		
+		<div class="head">
+			<div class="head_img">
+				<img src="../image/cjlu.jpg" height="100" >
+			</div>
+			<div class="head_font" style="font-size: 20px;">
+				<h1>web期末大作业 未方山</h1>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<nav>
+		    <div class="wrap">
+		            <ul class="level">
+		                <li><a href="../hometown-index.html">首页</a></li>
+		                <li>
+		                    <a href="../senery.html">象山美景</a>
+		                    <ul class="two">
+		                        <li><a href="../senery/songlanshan.html" style="color: #474747;">松兰山</a></li>
+		                        <li><a href="../senery/yingshicheng.html" style="color: #474747;">象山影视城</a></li>
+		                        <li><a href="../senery/huaaodao.html" style="color: #474747;">花岙岛</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="../renwen.html">象山人文</a>
+		                    <ul class="two">
+		                        <li><a href="../renwen/mingren.html" style="color: #474747;">象山名人</a></li>
+								<li><a href="../renwen/yishuguan.html" style="color: #474747;">艺术馆</a></li>
+								<li><a href="../renwen/tashan.html" style="color: #474747;">塔山遗址</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="../food.html">象山特产与美食</a>
+		                    <ul class="two">
+		                        <li><a href="../food/seafood.html" style="color: #474747;">海鲜</a></li>
+		                        <li><a href="../food/dianxin.html" style="color: #474747;">点心</a></li>
+		                        <li><a href="../food/haichanping.html" style="color: #474747;">海产品</a></li>
+		                    </ul>
+		                </li>
+						<li>
+						    <a href="">时代广场</a>
+						</li>
+		                <li>
+		                    <a href="../profile/frame(key).html">个人简历</a>
+		                </li>
+		            </ul>
+		        </div>
+		    </nav>
+		<div class="clear"></div>
+		<div id="head_pic">
+			<img src="../image/head.jpg" >
+		</div>
+		<div id="main">
+			<div id="m">
+				<h1>松兰山</h1>
+				<p>  宁波松兰山滨海旅游度假区是国家4A级旅游区、省级旅游度假区，位于浙江省宁波市象山县，总面积约31.22平方公里，度假区山海交融，岬湾众多，沙滩连绵，负氧离子含量每立方厘米高达14700个，誉称“天然氧吧”。
+度假区现有各类酒店及农家乐20余家，在建五星级酒店2家（喜来登、希尔顿酒店），开放经营性沙滩2个，在建有亚帆中心、东海铭城、白沙湾度假村等一批重大功能性项目，拥有度假酒店、海鲜美食、婚恋摄影、汽车露营、温泉养生、海上运动、旅游演艺等业态产品。是华东地区陆岸仅有的一处以大海为主题，集休闲、娱乐、运动、避暑、度假、会议等为一体的综合性滨海旅游度假胜地，被誉为“东方不老岛”上的一颗明珠。</p>
+				<hr style="border:2px solid #999999 ;">
+			</div>
+			<div id="container">
+				<div class="left">
+					<h2>观日亭</h2>
+					<p>临海的观日亭位于度假区内，但处于未开放的施工区域，人迹罕至，和度假区有一条改建中的盘山道路相连，这条路还连接度假区与爵溪街道。观日亭西靠盘山道路，东临大海，临海礁石与观日亭之间有一条人踩成的小道相连。</p>
+				<hr >
+				</div>
+				<div class="main_pic">
+					<img src="../image/song1.jpg">
+				</div>
+				<div class="left">
+					<h2>东沙滩</h2>
+								<p>东沙滩是松兰山沙滩中的王者，长900米，宽200米，面积约15万平方米，是华东地区最大的陆岸沙滩。海湾平均水深1.4米，沙泥质底，水清浪静，是个理想的海上活动场所。1米等深线内区域为滨海沙滩浴场，1米等深线外为冲浪、滑板、快艇、摩托艇活动区，外侧就是帆板、帆船训练区。</p>
+				<hr >
+				</div>
+				<div class="main_pic">
+					<img src="../image/song2.jpg">
+				</div>
+				<div class="left">
+					<h2>松兰山游步道</h2>
+					<p>松兰山游步道位于松兰山沿海岸线，南起东沙滩，北至白沙湾，以栈道形式沿滨海礁石海滩穿行，全长3.1公里，平均宽度为2.5米，总面积约12万平方米。栈道是集公众性、休闲性、生态性为一体的高品质滨海慢行步道，沿线设置滨海眺台、观景平台等，全程以红色为主调，素有“海上红丝带”之美誉。</p>
+				<hr >
+				</div>
+				<div class="main_pic">
+					<img src="../image/song4.jpg">
+				</div>
+				<div class="left">
+					<h2>戚继光塑像</h2>
+					<p>戚继光塑像，是为了纪念抗倭名将戚继光而根据戚继光全身像为标准而雕塑的塑像。戚继光在象山期间曾与谭伦、俞大猷一起在塑像所在处建营设寨，痛击倭寇，留下了很多兵营、城寨、烽火台等遗址。为了纪念他抗倭的丰功伟绩，特设立了这尊塑像，供人凭吊。</p>
+				<hr >
+				</div>
+				<div class="main_pic">
+					<img src="../image/song3.jpg">
+				</div>
+			</div>
+		</div>
+		<div id="bottom">
+			<h1><a href="yingshicheng.html">下一节->影视城</a></h1>
+		</div>
+		<div class="clear"></div>
+		<div class="footer">
+			<ul class="foot_list">
+				<a href="javascript:scroll(0,0)"><h1 align="middle" >Copyright © 2021 2000303224 E-mail:rqzhu777@163.com. All rights reserved.</h1></a>
+			</ul>
+		</div>
+	</body>
+</html>

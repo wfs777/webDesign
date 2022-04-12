@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="../css/hometown_css.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/sea_css.css"/>
+		<title>象山海产品</title>
+	</head>
+	<body>
+		<div id="top_line">
+			<div class="top_left">
+				<a href="#">welcome to 象山</a>
+			</div>
+			<form action="demo.html" onsubmit="return checkForm()">
+			        <div id="login-header">
+			        	<tr>
+			        		 <td ><a href="javascript:void(0)">注册</a><a id="adminBtn" href="javascript:void(0)">登录|</a></td>
+			        	</tr>
+			        </div>
+			        <!-- 登陆框主体 -->
+			        <div id="login" class="login">
+			            <!-- 登陆框标题 -->
+			            <div id="login-title" class="login-title">
+			                登陆
+			                <span><a id="closeBtn" href="javascript:void(0)">关闭</a></span>
+			            </div>
+			            <!-- 登陆框表单 -->
+			            <div id="login-form">
+			                <div class="login-input">
+			                    <label>用户名</label>
+			                    <input id="value"   onkeyup="hint()" type="text" Name="Userame" placeholder="用户名" class="list-input"/>
+			                    <span id="hint" style="color: #808080;">用户名长度不能小于六</span>
+			                </div>
+							<div class="login-input">
+							    <label>日期</label>
+							    <input id="date_value"   onkeyup="checkDate()" type="text" name="date" placeholder="日期" class="list-input"/>
+							    <span id="date_hint" style="color: #808080;">日期格式年-月-日</span>
+							</div>
+			                <div class="login-input">
+			                    <label>密码</label>
+			                    <input id="pass_value"   onkeyup="checkPass()" type="password" name="password" placeholder="密码" class="list-input"/>
+			                    <span id="pass_hint" style="color: #808080;">密码长度不能小于六</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>确认密码</label>
+			                    <input id="passpass_value"  onkeyup="checkPassPass()" type="password" name="password" placeholder="确认密码"class="list-input" />
+			                    <span id="passpass_hint" style="color: #808080;">两次密码要一致</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>邮箱</label>
+			                    <input id="email"   onkeyup="emailCheck()" type="email" name="email" placeholder="邮箱" class="list-input"/>
+			                    <span id="email_hint"></span>
+			                </div>
+			                <div class="login-input">
+			                    <label>手机号</label>
+			                    <input id="phone" type="text"   onkeyup="phoneCheck()" Name="Phone" placeholder="手机号"class="list-input">
+			                    <span id="phone_hint"></span>
+			                </div>
+			            </div>
+			            <!-- 登陆框登陆按钮 -->
+			            <input type="submit"  id="loginSubmit" value="提交" class="loginSubmit"/>
+			        </div>
+			
+			        <!-- 遮盖层 -->
+			        <div id="bg" class="bg">sada</div>
+			</form>
+			<script type="text/javascript" src="js/login.js">
+				</script>
+		</div>
+		
+		<div class="head">
+			<div class="head_img">
+				<img src="../image/cjlu.jpg" height="100" >
+			</div>
+			<div class="head_font">
+				<h1>web期末大作业 未方山</h1>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<nav>
+		    <div class="wrap">
+		            <ul class="level">
+		                <li><a href="../hometown-index.html">首页</a></li>
+		                <li>
+		                    <a href="../senery.html">象山美景</a>
+		                    <ul class="two">
+		                        <li><a href="../senery/songlanshan.html" style="color: #474747;">松兰山</a></li>
+		                        <li><a href="../senery/yingshicheng.html" style="color: #474747;">象山影视城</a></li>
+		                        <li><a href="../senery/huaaodao.html" style="color: #474747;">花岙岛</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="../renwen.html">象山人文</a>
+		                    <ul class="two">
+		                        <li><a href="../renwen/mingren.html" style="color: #474747;">象山名人</a></li>
+								<li><a href="../renwen/yishuguan.html" style="color: #474747;">艺术馆</a></li>
+								<li><a href="../renwen/tashan.html" style="color: #474747;">塔山遗址</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="../food.html">象山特产与美食</a>
+		                    <ul class="two">
+		                        <li><a href="seafood.html" style="color: #474747;">海鲜</a></li>
+		                        <li><a href="dianxin.html" style="color: #474747;">点心</a></li>
+		                        <li><a href="haichanping.html" style="color: #474747;">海产品</a></li>
+		                    </ul>
+		                </li>
+						<li>
+						    <a href="../fashion/shop/shoppingIndex.html">时代广场</a>
+						</li>
+		                <li>
+		                    <a href="../profile/frame(key).html">个人简历</a>
+		                </li>
+		            </ul>
+		        </div>
+		    </nav>	
+		<div class="clear"></div>
+		<div id="head_pic">
+			<img src="../image/head.JPG" >
+		</div>
+		<div class="content">
+			<div class="food_left">
+				<ul class="tab">
+		            <li><a href="#">象山紫菜</a></li>
+		            <li><a href="#section-2">海蜒</a></li>
+		            <li><a href="#section-3">虾皮</a></li>
+					<li><a href="#section-4">黄鱼鲞</a></li>
+					<li><a href="../food.html" style="color: #EA2020;">回到象山美食与特产</a></li>
+		       </ul>
+			</div>
+			<div class="food_right">
+				<div class="right_content">
+					<div class="food_pic">
+						<img src="../image/hai1.gif.jpeg"/>
+					</div>
+					<div class="food_font">
+						<h2 id="section-1">象山紫菜 </h2>
+						<h1>紫菜养殖在象山已经有30多年历史，全县拥有养殖面积1.6万余亩，是海水养殖主导产品之一随着养殖技术水平的提高和市场需求的增多，养殖面积逐年扩大，形成较大生产规模。目前全县养殖面积1.6万亩，产干紫菜3500多吨。以前鲜菜收割后，大多手工制成菜饼，晒干上市。近年发展机制加工，产品档次提高，菜饼薄嫩光亮、味道鲜美、清洁卫生。 紫菜含有丰富的维生素和矿物质，特别是维生素B12、B1、B2、A、C、E等。它所含的蛋白质与大豆差不多，是大米的6倍；维生素A约为牛奶的67倍，核黄素比香菇多9倍，维生素C为卷心菜的70倍。还含有胆碱、胡萝卜素、硫胺素、烟酸、维生素C、碘等。它具有清热利尿、补肾养心、降低血压，促进人体代谢等多种功效。　　</h1>
+					</div>
+				</div>
+	          
+	          	<hr>
+				<div class="right_content">
+					<div class="food_pic">
+						<img src="../image/hai4.gif.jpeg"/>
+					</div>
+					<div class="food_font">
+						<h2 id="section-2">海蜒</h2>
+						<h1>海蜒，或叫“海艳”，产于渔山列岛清水海域，有200多年捕捞历史，列为海味珍品，素负盛名。海蜒味鲜美，色白，可泡汤、炒蛋炒菜、拌咸菜等。　　海蜒在清代被诗人李邺嗣称作“海咸”，且有诗说“一瓶蟹甲纯黄酱，千箸鱼头细海咸”。 </h1>
+					</div>
+	            </div>
+	            
+	            <hr>
+	            <div class="right_content">
+	            	<div class="food_pic">
+	            		<img src="../image/hai3.gif.jpeg"/>
+	            	</div>
+	            	<div class="food_font">
+	            		<h2 id="section-3">虾皮</h2>
+						<h1>直接晒制而成的东海特级虾皮, 全淡的生虾皮,北方那边俗称甜晒吧,营养价值非常高，最适合给你的宝宝做菜吃,真正的天然绿色食品。由于晒制的很干,半斤满满一大包，可以吃上一阵子了，超值！ 虾米可即食，也可放汤做菜。虾米酱油汤，味精、猪油、美味鲜酱油开水溃泡，也可虾米煎蛋~是小孩子补钙的极品.</h1>
+	            	</div>
+	            </div>
+	            <hr>
+				<div class="right_content">
+					<div class="food_pic">
+						<img src="../image/hai2.gif.jpeg"/>
+					</div>
+					<div class="food_font">
+						<h2 id="section-4">黄鱼鲞</h2>
+						<h1>黄鱼鲞，又名白鲞，是鲜黄鱼加工制成品，由鲜鱼剖开晒干而成。 　　据《吴地记》载，吴王阖闾10年（公元前505年），在海上作战，捕得大黄鱼作军食，“吴王归，问海中所食鱼，所司云并曝干。王索之，其味美，因书美下着鱼，是为鲞字”。 　　爵溪加工的白鲞，质地新鲜，大小匀称，以洁白、形圆、干净、味美著称，特称“爵鲞”，畅销上海、杭州、绍兴等地。 　　黄鱼鲞可单独吃，也可与鲜肉、火腿等同炖，异香扑鼻，脍炙人口，“鲞烤鸡”、“三黄汤”等皆为桌上名菜。</h1>
+					</div>
+				</div>
+				<hr >
+	        
+	
+			</div>
+        </div> 
+		<div class="clear"></div>
+		<div class="footer">
+			<ul class="foot_list">
+				<a href="javascript:scroll(0,0)"><h1 align="middle" >Copyright © 2021 CJLU/2000303224  E-mail:rqzhu777@163.com. All rights reserved.</h1></a>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</body>
+</html>
+

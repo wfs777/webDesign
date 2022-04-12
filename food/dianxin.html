@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="../css/hometown_css.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/sea_css.css"/>
+		<title>象山点心</title>
+	</head>
+	<body>
+		<div id="top_line">
+			<div class="top_left">
+				<a href="#">welcome to 象山</a>
+			</div>
+			<form action="demo.html" onsubmit="return checkForm()">
+			        <div id="login-header">
+			        	<tr>
+			        		 <td ><a href="javascript:void(0)">注册</a><a id="adminBtn" href="javascript:void(0)">登录|</a></td>
+			        	</tr>
+			        </div>
+			        <!-- 登陆框主体 -->
+			        <div id="login" class="login">
+			            <!-- 登陆框标题 -->
+			            <div id="login-title" class="login-title">
+			                登陆
+			                <span><a id="closeBtn" href="javascript:void(0)">关闭</a></span>
+			            </div>
+			            <!-- 登陆框表单 -->
+			            <div id="login-form">
+			                <div class="login-input">
+			                    <label>用户名</label>
+			                    <input id="value"   onkeyup="hint()" type="text" Name="Userame" placeholder="用户名" class="list-input"/>
+			                    <span id="hint" style="color: #808080;">用户名长度不能小于六</span>
+			                </div>
+							<div class="login-input">
+							    <label>日期</label>
+							    <input id="date_value"   onkeyup="checkDate()" type="text" name="date" placeholder="日期" class="list-input"/>
+							    <span id="date_hint" style="color: #808080;">日期格式年-月-日</span>
+							</div>
+			                <div class="login-input">
+			                    <label>密码</label>
+			                    <input id="pass_value"   onkeyup="checkPass()" type="password" name="password" placeholder="密码" class="list-input"/>
+			                    <span id="pass_hint" style="color: #808080;">密码长度不能小于六</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>确认密码</label>
+			                    <input id="passpass_value"  onkeyup="checkPassPass()" type="password" name="password" placeholder="确认密码"class="list-input" />
+			                    <span id="passpass_hint" style="color: #808080;">两次密码要一致</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>邮箱</label>
+			                    <input id="email"   onkeyup="emailCheck()" type="email" name="email" placeholder="邮箱" class="list-input"/>
+			                    <span id="email_hint"></span>
+			                </div>
+			                <div class="login-input">
+			                    <label>手机号</label>
+			                    <input id="phone" type="text"   onkeyup="phoneCheck()" Name="Phone" placeholder="手机号"class="list-input">
+			                    <span id="phone_hint"></span>
+			                </div>
+			            </div>
+			            <!-- 登陆框登陆按钮 -->
+			            <input type="submit"  id="loginSubmit" value="提交" class="loginSubmit"/>
+			        </div>
+			
+			        <!-- 遮盖层 -->
+			        <div id="bg" class="bg">sada</div>
+			</form>
+			<script type="text/javascript" src="js/login.js">
+				</script>
+		</div>
+		
+		<div class="head">
+			<div class="head_img">
+				<img src="../image/cjlu.jpg" height="100" >
+			</div>
+			<div class="head_font">
+				<h1>web期末大作业 未方山</h1>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<nav>
+		    <div class="wrap">
+		            <ul class="level">
+		                <li><a href="../hometown-index.html">首页</a></li>
+		                <li>
+		                    <a href="../senery.html">象山美景</a>
+		                    <ul class="two">
+		                        <li><a href="../senery/songlanshan.html" style="color: #474747;">松兰山</a></li>
+		                        <li><a href="../senery/yingshicheng.html" style="color: #474747;">象山影视城</a></li>
+		                        <li><a href="../senery/huaaodao.html" style="color: #474747;">花岙岛</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="../renwen.html">象山人文</a>
+		                    <ul class="two">
+		                        <li><a href="../renwen/mingren.html" style="color: #474747;">象山名人</a></li>
+								<li><a href="../renwen/yishuguan.html" style="color: #474747;">艺术馆</a></li>
+								<li><a href="../renwen/tashan.html" style="color: #474747;">塔山遗址</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="../food.html">象山特产与美食</a>
+		                    <ul class="two">
+		                        <li><a href="seafood.html" style="color: #474747;">海鲜</a></li>
+		                        <li><a href="dianxin.html" style="color: #474747;">点心</a></li>
+		                        <li><a href="haichanping.html" style="color: #474747;">海产品</a></li>
+		                    </ul>
+		                </li>
+						<li>
+						    <a href="../fashion/shop/shoppingIndex.html">时代广场</a>
+						</li>
+		                <li>
+		                    <a href="../profile/frame(key).html">个人简历</a>
+		                </li>
+		            </ul>
+		        </div>
+		    </nav>	
+		<div class="clear"></div>
+		<div id="head_pic">
+			<img src="../image/head.JPG" >
+		</div>
+		<div class="content">
+			<div class="food_left">
+				<ul class="tab">
+		            <li><a href="#">米馒头</a></li>
+		            <li><a href="#section-2">红豆团</a></li>
+		            <li><a href="#section-3">麻糍</a></li>
+					<li><a href="#section-4">笋壳粽</a></li>
+					<li><a href="#section-5">肉包汤馃</a></li>
+					<li><a href="haichanping.html"style="color: #EA2020;">下一节->海产品</a></li>
+		       </ul>
+			</div>
+			<div class="food_right">
+				<div class="right_content">
+					<div class="food_pic">
+						<img src="../image/dian1.jpeg"/>
+					</div>
+					<div class="food_font">
+						<h2 id="section-1">米馒头</h2>
+						<h1>最能代表象山点心的特色小吃。宁波、上海等周边的很多客人都是米馒头的忠实粉丝。米馒头冷热皆宜，有舀糕馒头、搓糕馒头和大糕馒头之分。舀糕馒头薄而扁，蒸熟后顶裂开花，形状不均匀，口感松软而粘，多食不伤胃；搓糕馒头圆润厚实，细腻洁白，中间点上红点，口感韧糯酸甜，好看好吃。米馒头由米粉发酵制成，蒸熟时，通体雪白，小巧玲珑，清甜可口。</h1>
+					</div>
+				</div>
+	          
+	          	<hr>
+				<div class="right_content">
+					<div class="food_pic">
+						<img src="../image/dian2.jpeg"/>
+					</div>
+					<div class="food_font">
+						<h2 id="section-2">红豆团</h2>
+						<h1>红豆团，也叫红团团。一笼香喷喷的红团团，雪白粉糯，顶上一簇红润润的红点点，闻起来米香袅袅，引人一阵嘴馋。这是象山人过年的标配，好像不吃红团团就不算过年了似的。当刚蒸好的红团团出炉时，米香混合着竹蒸笼的清香，满屋里雾气缭绕、热气腾腾，大人招呼着，孩子欢腾着，年味瞬间浓了。红团团由糯米粉揉成团，裹上红豆沙为馅，再在外面粘上一层糯米粒，通体雪白。蒸熟后，皮子脆糯，不黏羹栏，馅子清甜爽口。另外还有一种红团团，在糯米粉团中添加蓬蒿，做成青团。红绿两种口味两种色彩，更增过年喜庆。 </h1>
+					</div>
+	            </div>
+	            
+	            <hr>
+	            <div class="right_content">
+	            	<div class="food_pic">
+	            		<img src="../image/dian3.jpeg"/>
+	            	</div>
+	            	<div class="food_font">
+	            		<h2 id="section-3">麻糍</h2>
+						<h1>一种清明点心，吃法多样，最经典的做法是切成方块，在热锅里烙熟。最好两面微黄微焦，烫手却喷香，口感外脆里糯。蘸一蘸黄糖，一口咬下去满嘴都是艾草和糯米的清香，混合着香甜的黄糖，嘴里沙津津软糯糯，口感美嚼劲好。麻糍由糯米、松花、蓬蒿等食材制作而成，分三类：白麻糍通体嫩黄，近乎透明；青麻糍添加蓬蒿，青绿发蓝；乌饭麻糍添加灌木“乌饭芦”的汤汁，乌黑晶亮，甜津津。</h1>
+	            	</div>
+	            </div>
+	            <hr>
+				<div class="right_content">
+					<div class="food_pic">
+						<img src="../image/dian4.jpeg"/>
+					</div>
+					<div class="food_font">
+						<h2 id="section-4">笋壳粽</h2>
+						<h1>端午点心。象山的粽子多是圆筒状的，以笋壳包裹，滚圆饱满，肉厚软糯。陷多以红豆为主，也有肉粽、蛋黄粽。上笼蒸熟后的粽子一剥开，笋叶清香直钻鼻腔，糯米颜色变深，紧实密集，很是诱人。妈妈们切粽子从来不用刀。裹粽线用牙咬住一头，一手握粽，一手将线在粽上缠绕一圈，粽子就被切成一片一片的，厚薄均匀，香糯美味。粽子由糯米蒸制，笋壳包成。裹粽讲究压紧馅子，解开后，韧胶胶的，饭浆藕断丝连，入口爽滑。蘸糖吃，清甜淡香</h1>
+					</div>
+				</div>
+				<hr >
+				<div class="right_content">
+					<div class="food_pic">
+						<img src="../image/food9.jpg"/>
+					</div>
+					<div class="food_font">
+						<h2 id="section-5">肉包汤馃</h2>
+						<h1>肉包汤馃以肉为陷，味咸汤美，既能吃肉又能喝汤，很对孩子胃口。而且汤馃圆白莹润，白玉丸似的一颗，粉面玉雕，着实惹人喜爱。石磨制作的水磨粉，米浆细匀。剁成的猪肉茸做馅子，拌和切成丁的香干、茭白，炒熟，细碎成泥。制成的汤圆坯大小均匀。煮汤团，先烧沸水，后放汤团，随沸随加少量冷水，以免煮破汤团。肉包汤团色白皮薄，软糯馅鲜。</h1>
+					</div>
+				</div>
+				<hr >
+	        
+	
+			</div>
+        </div> 
+		<div class="clear"></div>
+		<div class="footer">
+			<ul class="foot_list">
+				<a href="javascript:scroll(0,0)"><h1 align="middle" >Copyright © 2021 CJLU/2000303224  E-mail:rqzhu777@163.com. All rights reserved.</h1></a>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</body>
+</html>
+

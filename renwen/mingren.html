@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../css/hometown_css.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/irenwen.css"/>
+		<script type="text/javascript" src="../js/showdiv.js">
+			</script>
+		<title>象山名人</title>
+	</head>
+	
+	<body>
+		<div id="top_line">
+			<div class="top_left">
+				<a href="#">welcome to 象山</a>
+			</div>
+			<form action="demo.html" onsubmit="return checkForm()">
+			        <div id="login-header">
+			        	<tr>
+			        		 <td ><a href="javascript:void(0)">注册</a><a id="adminBtn" href="javascript:void(0)">登录|</a></td>
+			        	</tr>
+			        </div>
+			        <!-- 登陆框主体 -->
+			        <div id="login" class="login">
+			            <!-- 登陆框标题 -->
+			            <div id="login-title" class="login-title">
+			                登陆
+			                <span><a id="closeBtn" href="javascript:void(0)">关闭</a></span>
+			            </div>
+			            <!-- 登陆框表单 -->
+			            <div id="login-form">
+			                <div class="login-input">
+			                    <label>用户名</label>
+			                    <input id="value"   onkeyup="hint()" type="text" Name="Userame" placeholder="用户名" class="list-input"/>
+			                    <span id="hint" style="color: #808080;">用户名长度不能小于六</span>
+			                </div>
+							<div class="login-input">
+							    <label>日期</label>
+							    <input id="date_value"   onkeyup="checkDate()" type="text" name="date" placeholder="日期" class="list-input"/>
+							    <span id="date_hint" style="color: #808080;">日期格式年-月-日</span>
+							</div>
+			                <div class="login-input">
+			                    <label>密码</label>
+			                    <input id="pass_value"   onkeyup="checkPass()" type="password" name="password" placeholder="密码" class="list-input"/>
+			                    <span id="pass_hint" style="color: #808080;">密码长度不能小于六</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>确认密码</label>
+			                    <input id="passpass_value"  onkeyup="checkPassPass()" type="password" name="password" placeholder="确认密码"class="list-input" />
+			                    <span id="passpass_hint" style="color: #808080;">两次密码要一致</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>邮箱</label>
+			                    <input id="email"   onkeyup="emailCheck()" type="email" name="email" placeholder="邮箱" class="list-input"/>
+			                    <span id="email_hint"></span>
+			                </div>
+			                <div class="login-input">
+			                    <label>手机号</label>
+			                    <input id="phone" type="text"   onkeyup="phoneCheck()" Name="Phone" placeholder="手机号"class="list-input">
+			                    <span id="phone_hint"></span>
+			                </div>
+			            </div>
+			            <!-- 登陆框登陆按钮 -->
+			            <input type="submit"  id="loginSubmit" value="提交" class="loginSubmit"/>
+			        </div>
+			
+			        <!-- 遮盖层 -->
+			        <div id="bg" class="bg">sada</div>
+			</form>
+			<script type="text/javascript" src="../js/login.js">
+				</script>
+		</div>
+		
+		<div class="head">
+			<div class="head_img">
+				<img src="../image/cjlu.jpg" height="100" >
+			</div>
+			<div class="head_font" style="font-size: 20px;">
+				<h1>web期末大作业  未方山</h1>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<nav>
+		    <div class="wrap">
+		            <ul class="level">
+		                <li><a href="../hometown-index.html">首页</a></li>
+		                <li>
+		                    <a href="../senery.html">象山美景</a>
+		                    <ul class="two">
+		                        <li><a href="../senery/songlanshan.html" style="color: #474747;">松兰山</a></li>
+		                        <li><a href="../senery/yingshicheng.html" style="color: #474747;">象山影视城</a></li>
+		                        <li><a href="../senery/huaaodao.html" style="color: #474747;">花岙岛</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="../renwen.html">象山人文</a>
+		                    <ul class="two">
+		                        <li><a href="mingren.html" style="color: #474747;">象山名人</a></li>
+								<li><a href="yishuguan.html" style="color: #474747;">艺术馆</a></li>
+								<li><a href="tashan.html" style="color: #474747;">塔山遗址</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="../food.html">象山特产与美食</a>
+		                    <ul class="two">
+		                        <li><a href="../food/seafood.html" style="color: #474747;">海鲜</a></li>
+		                        <li><a href="../food/dianxin.html" style="color: #474747;">点心</a></li>
+		                        <li><a href="../food/haichanping.html" style="color: #474747;">海产品</a></li>
+		                    </ul>
+		                </li>
+						<li>
+						    <a href="../fashion/shop/shoppingIndex.html">时代广场</a>
+						</li>
+		                <li>
+		                    <a href="../profile/frame(key).html">个人简历</a>
+		                </li>
+		            </ul>
+		        </div>
+		    </nav>	
+		<div class="clear"></div>
+		<div id="head_pic">
+			<img src="../image/head.jpg" >
+		</div>
+			<div class="left">
+				<div class="left_list">
+					<div id="left_nav">	
+					<ul>
+						<li><span onclick="showDiv('div0');">陈汉章-></span></li>
+						<li><span onclick="showDiv('div1');">陈纯-></span></li>
+						<li><span onclick="showDiv('div2');">梵琦-></span></li>
+						<li><span onclick="showDiv('div3');">王家谟-></span></li>
+						<li><span onclick="showDiv('div4');">俞士吉-></span></li>
+						<li><span onclick="showDiv('div5');">白银飞-></span></li>
+					<ul>
+					</div>
+				</div>
+			</div>
+			<div id="right_nav">
+			    <div id="div0">
+					<div class="right">
+						<div class="right_font">
+							<h2>陈汉章</h2>
+							<p>陈汉章（1864年3月13日—1938年6月29日），谱名得闻，字云从，别号倬云，晚号伯弢，浙江省宁波市象山县东陈乡东陈村人，国立北京大学、中央大学历史系主任，经史学家，教育家，一代鸿儒，国学大师。其一生自始至终勤奋自学和刻苦研读；一生致力经史子集“四部”的研究；一生弘扬国学的发展和人才的培养；一生充满爱国情怀和民族自豪感。陈汉章是中国近代著名的历史学家、经学大师，就任过北京大学教授、中央大学教授兼史学系主任。著述甚多，主要有《中国通史》、 《尔雅学讲义》、 《孔贾经疏考异异同评》、《礼书通故识语》、 《周书后案》、《论语征知录》、 《缀学堂丛稿》、《史通补释》等百余种，手稿600余万字，现存北京图书馆、浙江省图书馆等。
+							</p>
+							<p>25岁（1888年）去杭州乡试考中第10名举人。汉章先生中举后，多次被聘做官，官至广州直隶州州同，但他均未出仕。他一心追求学问，博览群书，遂成大学问家。46岁（1909年）被京师大学堂（1898年建立，1912年改名为北京大学）慕名聘请去任教授，至京一改初衷继续求学。50岁（1913年）以第一名身份毕业于北大第一届史学门，至今在北大仍留为佳话。</p>
+						</div>
+						<div class="main_pic" >
+							<img src="../image/pp1.jpeg">
+						</div>
+					</div>
+					
+				</div>
+			    <div id="div1" class="hidden">
+					<div class="right">
+						<div class="right_font">
+							<h2>陈纯</h2>
+							<p> 陈纯，1955年12月11日出生于浙江 象山，男，汉族， 计算机应用专家，中共党员。曾任 浙江大学计算机科学与技术学院院长、浙江大学软件学院院长，现为浙江大学计算机科学与技术学院教授， 国家数码喷印工程技术研究中心首席科学家， 国家列车智能化工程技术研究中心主任，国务院学位委员会学科评议组成员。1982年毕业于 厦门大学数学系，1990年获浙江大学计算机应用专业博士学位。2015年当选为 中国工程院院士。陈纯长期从事计算机应用领域的前沿研究工作。长期从事计算机应用领域的前沿研究工作，致力于将高水平的研究与产业应用相结合，主持研制完成 “计算机丝绸印染花样设计分色处理及制版自动化系统”、“纺织品数码喷印系统”等多个工程系统，得到了全面推广应用，取得了一系列成果。近年来，率领科研团队对大数据、人工智能和区块链等技术和系统进行了重点研发，有关成果在相关应用领域得到了全面推广。 </p>
+						</div>
+						<div class="main_pic" >
+							<img src="../image/pp2.jpeg">
+						</div>
+					</div>
+					
+				</div>
+			    <div id="div2" class="hidden">
+						<div class="right">
+							<div class="right_font">
+								<h2>梵琦</h2>
+								<p> 梵琦（1296—1370），俗姓朱，字楚石，一字昙耀，晚号西斋老人。浙江象山人。9岁出家于海盐县天宁永祚禅寺，受经于衲翁谟师。不久往湖州崇恩寺，依其从族祖晋翁询师，16岁赴杭州昭庆寺受戒。自是历览群经，学业大进。时英宗诏写金字《大藏经》，被选入京。泰定年间（1324年至1327年），奉命至当湖福臻院传法，遂主 永祚寺。受“印可”于元叟行端，为 大慧宗杲五传弟子， 南岳怀让下第24世。至正七年（1347年），钦赐“佛日普照慧辨禅师”号。明洪武元年（1368年），诏举江南大浮屠十余人，作大法会于蒋山禅寺，升座说法。50年间六坐道场，宣扬 禅宗，被尊为“明初第一流宗师”。著有《楚石梵琦禅师语录》、《净土诗》、《慈氏上生偈》、《北游凤山西斋》。 </p>
+							</div>
+							<div class="main_pic" >
+								<img src="../image/pp3.jpeg">
+							</div>
+						</div>
+				</div>
+			    <div id="div3" class="hidden">
+						<div class="right">
+							<div class="right_font">
+								<h2>王家谟</h2>
+								<p> 王家谟，小名王小曼，化名嘉谟，1906年12月13日生于象山县丹城镇西门村。少时就读于私塾，1916年考入县立高等小学。他学习勤奋，能写一手好字，尤其擅长 蝇头小楷。1919年毕业后，因家庭经济困难而无力升学。翌年春，入县署司法室当练习生，专事抄写。1922年，随叔父王丹泉至宁波交易所经纪人事务处任总务。后因无法忍受交易所里尔虞我诈的非人道交易，毅然离甬返乡。1923年，王家谟受聘为丹城姜氏学堂教员。执教期间，他宣传新思想，传播新知识，在学校里很有影响。 </p>
+							</div>
+							<div class="main_pic" >
+								<img src="../image/pp4.jpeg">
+							</div>
+						</div>
+				</div>
+				<div id="div4" class="hidden">
+						<div class="right">
+							<div class="right_font">
+								<h2>俞士吉</h2>
+								<p> 俞士吉(1354—1430) 又说生卒年为（1360—1435.6.25），字周贞（又说字用贞），号栎庵，晚号大瀛海客，浙江象山人。明初，举为贤良方正。洪武三十年(1397)，中举人，授兖州府学训导。建文中，上疏言时政得失，为朝议所允，晋监察御史，出按凤阳、徽州、湖广。成祖即位之后，进佥都御史。时浙西大水，命偕 户部尚书夏元吉，往督农政。二年，湖州灾，奏捐粮六十万石赈民。三年夏，浙西大饥，又随夏元吉发粟三十万石往赈。四年（1406），命以 礼部侍郎衔出使日本，封其国山为“寿安镇国之山”。六年（1408），为襄阳知府。时仁宗在东宫，闻士吉善诗，询以古诗唐律，命作《圣节》诗各一体，援笔立成。宣德初，授南京 刑部侍郎，越五年致仕。史传称其“仪表修洁，举止清雅，文采蔚然，谀之不喜，犯之不怒，伟度洪量汪如”。著有《栎庵自怡稿》。据石浦《武氏家谱》载，曾与郑和率船队下过 西洋。《明史》有传。 </p>
+							</div>
+							<div class="main_pic" >
+								<img src="../image/pp5.jpeg">
+							</div>
+				</div>
+					
+				</div>
+				<div id="div5" class="hidden">
+						<div class="right">
+							<div class="right_font">
+								<h2>白银飞</h2>
+								<p> 俞士吉(1354—1430) 又说生卒年为（1360—1435.6.25），字周贞（又说字用贞），号栎庵，晚号大瀛海客，浙江象山人。明初，举为贤良方正。洪武三十年(1397)，中举人，授兖州府学训导。建文中，上疏言时政得失，为朝议所允，晋监察御史，出按凤阳、徽州、湖广。成祖即位之后，进佥都御史。时浙西大水，命偕 户部尚书夏元吉，往督农政。二年，湖州灾，奏捐粮六十万石赈民。三年夏，浙西大饥，又随夏元吉发粟三十万石往赈。四年（1406），命以 礼部侍郎衔出使日本，封其国山为“寿安镇国之山”。六年（1408），为襄阳知府。时仁宗在东宫，闻士吉善诗，询以古诗唐律，命作《圣节》诗各一体，援笔立成。宣德初，授南京 刑部侍郎，越五年致仕。史传称其“仪表修洁，举止清雅，文采蔚然，谀之不喜，犯之不怒，伟度洪量汪如”。著有《栎庵自怡稿》。据石浦《武氏家谱》载，曾与郑和率船队下过 西洋。《明史》有传。 </p>
+							</div>
+							<div class="main_pic" >
+								<img src="../image/pp6.jpeg">
+							</div>
+						</div>
+				</div>
+			</div>
+		<div id="bottom">
+			<h1><a href="yishuguan.html">下一节->艺术馆</a></h1>
+		</div>
+		<div class="clear"></div>
+		<div class="footer">
+			<ul class="foot_list">
+				<a href="javascript:scroll(0,0)"><h1 align="middle" >Copyright © 2021 CJLU/2000303224 E-mail:rqzhu777@163.com. All rights reserved.</h1></a>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</body>
+</html>

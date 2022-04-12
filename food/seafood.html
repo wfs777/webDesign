@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="../css/hometown_css.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/sea_css.css"/>
+		<title>象山海鲜</title>
+	</head>
+	<body>
+		<div id="top_line">
+			<div class="top_left">
+				<a href="#">welcome to 象山</a>
+			</div>
+			<form action="demo.html" onsubmit="return checkForm()">
+			        <div id="login-header">
+			        	<tr>
+			        		 <td ><a href="javascript:void(0)">注册</a><a id="adminBtn" href="javascript:void(0)">登录|</a></td>
+			        	</tr>
+			        </div>
+			        <!-- 登陆框主体 -->
+			        <div id="login" class="login">
+			            <!-- 登陆框标题 -->
+			            <div id="login-title" class="login-title">
+			                登陆
+			                <span><a id="closeBtn" href="javascript:void(0)">关闭</a></span>
+			            </div>
+			            <!-- 登陆框表单 -->
+			            <div id="login-form">
+			                <div class="login-input">
+			                    <label>用户名</label>
+			                    <input id="value"   onkeyup="hint()" type="text" Name="Userame" placeholder="用户名" class="list-input"/>
+			                    <span id="hint" style="color: #808080;">用户名长度不能小于六</span>
+			                </div>
+							<div class="login-input">
+							    <label>日期</label>
+							    <input id="date_value"   onkeyup="checkDate()" type="text" name="date" placeholder="日期" class="list-input"/>
+							    <span id="date_hint" style="color: #808080;">日期格式年-月-日</span>
+							</div>
+			                <div class="login-input">
+			                    <label>密码</label>
+			                    <input id="pass_value"   onkeyup="checkPass()" type="password" name="password" placeholder="密码" class="list-input"/>
+			                    <span id="pass_hint" style="color: #808080;">密码长度不能小于六</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>确认密码</label>
+			                    <input id="passpass_value"  onkeyup="checkPassPass()" type="password" name="password" placeholder="确认密码"class="list-input" />
+			                    <span id="passpass_hint" style="color: #808080;">两次密码要一致</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>邮箱</label>
+			                    <input id="email"   onkeyup="emailCheck()" type="email" name="email" placeholder="邮箱" class="list-input"/>
+			                    <span id="email_hint"></span>
+			                </div>
+			                <div class="login-input">
+			                    <label>手机号</label>
+			                    <input id="phone" type="text"   onkeyup="phoneCheck()" Name="Phone" placeholder="手机号"class="list-input">
+			                    <span id="phone_hint"></span>
+			                </div>
+			            </div>
+			            <!-- 登陆框登陆按钮 -->
+			            <input type="submit"  id="loginSubmit" value="提交" class="loginSubmit"/>
+			        </div>
+			
+			        <!-- 遮盖层 -->
+			        <div id="bg" class="bg">sada</div>
+			</form>
+			<script type="text/javascript" src="js/login.js">
+				</script>
+		</div>
+		
+		<div class="head">
+			<div class="head_img">
+				<img src="../image/cjlu.jpg" height="100" >
+			</div>
+			<div class="head_font">
+				<h1>web期末大作业 未方山</h1>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<nav>
+		    <div class="wrap">
+		            <ul class="level">
+		                <li><a href="../hometown-index.html">首页</a></li>
+		                <li>
+		                    <a href="../senery.html">象山美景</a>
+		                    <ul class="two">
+		                        <li><a href="../senery/songlanshan.html" style="color: #474747;">松兰山</a></li>
+		                        <li><a href="../senery/yingshicheng.html" style="color: #474747;">象山影视城</a></li>
+		                        <li><a href="../senery/huaaodao.html" style="color: #474747;">花岙岛</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="../renwen.html">象山人文</a>
+		                    <ul class="two">
+		                        <li><a href="../renwen/mingren.html" style="color: #474747;">象山名人</a></li>
+								<li><a href="../renwen/yishuguan.html" style="color: #474747;">艺术馆</a></li>
+								<li><a href="../renwen/tashan.html" style="color: #474747;">塔山遗址</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="../food.html">象山特产与美食</a>
+		                    <ul class="two">
+		                        <li><a href="seafood.html" style="color: #474747;">海鲜</a></li>
+		                        <li><a href="dianxin.html" style="color: #474747;">点心</a></li>
+		                        <li><a href="haichanping.html" style="color: #474747;">海产品</a></li>
+		                    </ul>
+		                </li>
+						<li>
+						    <a href="../fashion/shop/shoppingIndex.html">时代广场</a>
+						</li>
+		                <li>
+		                    <a href="../profile/frame(key).html">个人简历</a>
+		                </li>
+		            </ul>
+		        </div>
+		    </nav>	
+		<div class="clear"></div>
+		<div id="head_pic">
+			<img src="../image/head.JPG" >
+		</div>
+		<div class="content">
+			<div class="food_left">
+				<ul class="tab">
+		            <li><a href="#">梭子蟹</a></li>
+		            <li><a href="#section-2">象山大黄鱼</a></li>
+		            <li><a href="#section-3">南田泥螺</a></li>
+					<li><a href="#section-4">象山海蜇</a></li>
+					<li><a href="dianxin.html" style="color: #EA2020;">下一节->点心</a></li>
+		       </ul>
+			</div>
+			<div class="food_right">
+				<div class="right_content">
+					<div class="food_pic">
+						<img src="../image/sea1.jpeg"/>
+					</div>
+					<div class="food_font">
+						<h2 id="section-1">梭子蟹</h2>
+						<h1>梭子蟹，学名“蝤蛑”，有些地方俗称“白蟹”。因头胸甲呈梭子形，故名。甲壳的中央有三个突起，所以又称“三疣梭子蟹”。雄性脐尖而光滑，螯长大，壳面带青色；雌性脐圆有绒毛，壳面呈赭色，或有斑点。梭子蟹肉肥味美，有较高的营养价值和经济价值，且适宜于海水暂养增肥。头胸甲梭形，宽几乎为长的2倍；头胸甲表面覆盖有细小的颗粒，具2条颗粒横向隆堤及3个疣状突起；额具2只锐齿；前侧缘具9只锐齿，末齿长刺状，向外突出。螯脚粗壮，长度较头胸甲宽长；长节棱柱形，雄性长节较修长，前缘具4锐棘。　梭子蟹，俗称梭子蟹、白蟹，属于甲壳纲、十足目、梭子蟹科，是中国沿海的重要经济蟹类。其生长迅速，养殖利润丰厚，已经成为中国沿海地区重要的养殖品种。梭子蟹一般在3-5 梭子蟹1米深海底生活及繁殖，冬天移居到10-30米的深海，喜在泥沙底部穴居。</h1>
+					</div>
+				</div>
+	          
+	          	<hr>
+				<div class="right_content">
+					<div class="food_pic">
+						<img src="../image/sea2.jpeg"/>
+					</div>
+					<div class="food_font">
+						<h2 id="section-2">象山大黄鱼</h2>
+						<h1>大黄鱼黄鱼分布于黄海中部以南至琼州海峡以东的中国大陆近海及朝鲜西海岸。雷州半岛以西也偶有发现。中国沿海的大黄鱼可分为3个种群:①东海北部、中部群。分布于黄海南部至东海中部，包括吕泗洋、岱衢洋、猫头洋、洞头洋至福建嵛山岛附近。②闽、粤东群。主要分布在东海南部、台湾海峡和南海北部（嵛山岛以南至珠江口）。这一种群又分为北部和南部两大群体。③粤西群。主要分布于珠江口以西至琼州海峡的南海区。生物习性　　大黄鱼为暖温性近海集群洄游鱼类,主要栖息于80米以内的沿岸和近海水域的中下层。产卵鱼群怕强光,喜逆流,好透明度较小的混浊水域。黎明、黄昏或大潮时多上浮，白昼或小潮时下沉。成鱼主要摄食各种小型鱼类及甲壳动物（虾、蟹、虾蛄类）。生殖盛期摄食强度显著降低；生殖结束后摄食强度增加。幼鱼主食桡足类、糠虾、燐虾等浮游动物。 </h1>
+					</div>
+	            </div>
+	            
+	            <hr>
+	            <div class="right_content">
+	            	<div class="food_pic">
+	            		<img src="../image/food9.jpg"/>
+	            	</div>
+	            	<div class="food_font">
+	            		<h2 id="section-3">南田泥螺</h2>
+						<h1>“南田泥螺”证明商标的产品，其生产地域范围为浙江省宁波市象山县南田岛特定生产区域，位于象山半岛南沿，处北纬29。09，，东经121。54，。象山县南田岛即鹤浦镇，岛屿面积102.8平方公里，浅海区域19.5万亩，滩涂2万亩。滩涂潮流缓慢，底质为泥质，底栖生物丰富，近海水质清新，盐度适中。更兼产地内气候条件绝佳，养殖条件得天独厚，非常适合泥螺生长，据悉，南田泥螺丰产年产量可达到500公斤∕亩左右。成功获批地理标志证明商标，对于全面提升扩大南田泥螺的影响力和市场占有率，加快该县水产品品牌建设，进一步推进渔业产业化进程，都有着十分重要而积极的意义。泥螺，又称吐铁，呈螺圆形，壳薄而脆，沿海泥涂均产，以南田涂、水湖涂最盛，质佳。“吐铁”名称的来历，是由于泥螺生长在海涂上“吐舌含沙，沙黑如铁”，每年要到桃花开时，泥螺的“铁”才吐完，肚内清洁，味就美了。</h1>
+	            	</div>
+	            </div>
+	            <hr>
+				<div class="right_content">
+					<div class="food_pic">
+						<img src="../image/sea4.jpeg"/>
+					</div>
+					<div class="food_font">
+						<h2 id="section-4">象山海蜇</h2>
+						<h1>海蜇又名水母，白皮子，主产于中国东南沿海。8~9月间，海蜇常成群浮游于海面，有时被冲击而搁浅在海滩，捕捞时，先用长标刺穿其伞体，然后用网捕获。捕后用石灰、明矾浸制。再榨去其体中水分，洗净，盐渍。一般伞体部和口腕部分开加工，口腕部俗称“海蜇头”，伞部俗称“海蜇皮”</h1>
+					</div>
+				</div>
+	        
+	
+			</div>
+        </div> 
+		<div class="clear"></div>
+		<div class="footer">
+			<ul class="foot_list">
+				<a href="javascript:scroll(0,0)"><h1 align="middle" >Copyright © 2021 CJLU/2000303224  E-mail:rqzhu777@163.com. All rights reserved.</h1></a>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</body>
+</html>
+

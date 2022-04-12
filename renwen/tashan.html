@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../css/hometown_css.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/tashan_css.css"/>
+		<title>塔山遗址</title>
+	</head>
+	<body>
+		<div id="top_line">
+			<div class="top_left">
+				<a href="#">welcome to 象山</a>
+			</div>
+			<form action="demo.html" onsubmit="return checkForm()">
+			        <div id="login-header">
+			        	<tr>
+			        		 <td ><a href="javascript:void(0)">注册</a><a id="adminBtn" href="javascript:void(0)">登录|</a></td>
+			        	</tr>
+			        </div>
+			        <!-- 登陆框主体 -->
+			        <div id="login" class="login">
+			            <!-- 登陆框标题 -->
+			            <div id="login-title" class="login-title">
+			                登陆
+			                <span><a id="closeBtn" href="javascript:void(0)">关闭</a></span>
+			            </div>
+			            <!-- 登陆框表单 -->
+			            <div id="login-form">
+			                <div class="login-input">
+			                    <label>用户名</label>
+			                    <input id="value"   onkeyup="hint()" type="text" Name="Userame" placeholder="用户名" class="list-input"/>
+			                    <span id="hint" style="color: #808080;">用户名长度不能小于六</span>
+			                </div>
+							<div class="login-input">
+							    <label>日期</label>
+							    <input id="date_value"   onkeyup="checkDate()" type="text" name="date" placeholder="日期" class="list-input"/>
+							    <span id="date_hint" style="color: #808080;">日期格式年-月-日</span>
+							</div>
+			                <div class="login-input">
+			                    <label>密码</label>
+			                    <input id="pass_value"   onkeyup="checkPass()" type="password" name="password" placeholder="密码" class="list-input"/>
+			                    <span id="pass_hint" style="color: #808080;">密码长度不能小于六</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>确认密码</label>
+			                    <input id="passpass_value"  onkeyup="checkPassPass()" type="password" name="password" placeholder="确认密码"class="list-input" />
+			                    <span id="passpass_hint" style="color: #808080;">两次密码要一致</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>邮箱</label>
+			                    <input id="email"   onkeyup="emailCheck()" type="email" name="email" placeholder="邮箱" class="list-input"/>
+			                    <span id="email_hint"></span>
+			                </div>
+			                <div class="login-input">
+			                    <label>手机号</label>
+			                    <input id="phone" type="text"   onkeyup="phoneCheck()" Name="Phone" placeholder="手机号"class="list-input">
+			                    <span id="phone_hint"></span>
+			                </div>
+			            </div>
+			            <!-- 登陆框登陆按钮 -->
+			            <input type="submit"  id="loginSubmit" value="提交" class="loginSubmit"/>
+			        </div>
+			
+			        <!-- 遮盖层 -->
+			        <div id="bg" class="bg">sada</div>
+			</form>
+			<script type="text/javascript" src="../js/login.js">
+				</script>
+		</div>
+		
+		<div class="head">
+			<div class="head_img">
+				<img src="../image/cjlu.jpg" height="100" >
+			</div>
+			<div class="head_font" style="font-size: 20px;">
+				<h1>web期末大作业 未方山</h1>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<nav>
+		    <div class="wrap">
+		            <ul class="level">
+		                <li><a href="../hometown-index.html">首页</a></li>
+		                <li>
+		                    <a href="../senery.html">象山美景</a>
+		                    <ul class="two">
+		                        <li><a href="../senery/songlanshan.html" style="color: #474747;">松兰山</a></li>
+		                        <li><a href="../senery/yingshicheng.html" style="color: #474747;">象山影视城</a></li>
+		                        <li><a href="../senery/huaaodao.html" style="color: #474747;">花岙岛</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="../renwen.html">象山人文</a>
+		                    <ul class="two">
+		                        <li><a href="mingren.html" style="color: #474747;">象山名人</a></li>
+								<li><a href="yishuguan.html" style="color: #474747;">艺术馆</a></li>
+								<li><a href="tashan.html" style="color: #474747;">塔山遗址</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="../food.html">象山特产与美食</a>
+		                    <ul class="two">
+		                        <li><a href="../food/seafood.html" style="color: #474747;">海鲜</a></li>
+		                        <li><a href="../food/dianxin.html" style="color: #474747;">点心</a></li>
+		                        <li><a href="../food/haichanping.html" style="color: #474747;">海产品</a></li>
+		                    </ul>
+		                </li>
+						<li>
+						    <a href="../fashion/shop/shoppingIndex.html">时代广场</a>
+						</li>
+		                <li>
+		                    <a href="../profile/frame(key).html">个人简历</a>
+		                </li>
+		            </ul>
+		        </div>
+		    </nav>
+		<div class="clear"></div>
+		<div id="head_pic">
+			<img src="../image/head.jpg" >
+		</div>
+		<div id="main">
+			<div id="m">
+				<h1>塔山遗址</h1>
+				<p>  塔山遗址位于浙江省象山县丹城塔山东南麓，依坡濒海，面积约4万平方米。1988年被发现，1990年、1992年、2007年三期发掘1600平方米，使象山地域人类活动的历史，从春秋战国时期，上溯到6000年前的新石器时代。遗址文化层堆积厚0.8-2.3米，分10个地层。时间跨度3000余年，早期属于新石器时代，晚期属于商周文化。新石器时代文化又可分为三个文化层：下层文化中的数十座墓葬，其形制和人骨架显示的葬式，又及陶器、石器、玉器等随葬品组合，反映了该时的塔山人为河姆渡文化。
+塔山遗址对研究江南地区史前文化乃至中国历史都具有重要意义。2013年被国务院核定为第七批全国重点文物保护单位。</p>
+				<hr style="border:2px solid #999999 ;">
+			</div>
+			<div id="container">
+				<div class="left">
+					<h2>简介</h2>
+					<p>与马家浜文化在这里相遇而不完全相融的状态，文化面貌正好填补河姆渡二、三期间的空缺，为此，有考古专家提出了“塔山文化”的命名；中层类似于崧泽文化；上层则相当于良诸文化。在某种意义上，塔山遗址代表了宁绍地区河姆渡文化以后新石器文化发展的序列。遗址中大量人骨架、大型兽骨、各类器物的出土，为研究体质人类学和东南沿海地理环境变迁、当时社会情状，提供了极为可贵的资料。
+国家文物局评价，“象山县塔山史前文化遗址的发现和发掘，体现了我国考古工作的新成就。 [1] 
+你知道吗？当年遗址所在地只是个煤气站，最早发现的是位中学生。
+位于象山丹城的塔山遗址首次发掘出商周时期的青铜兵器。2007年，塔山遗址发掘考古队领队、省考古研究所研究员蒋乐平向记者出示了一批近日发掘出土的器物，包括春秋战国时期的青铜镞等珍贵文物。
+塔山遗址，位于象山丹城城东南麓，沿山势呈东西向延伸，总面积约1.5万平方米。根据一期、二期发掘考古，塔山遗址是一处保存良好的原始聚落遗址，属新石器中晚期，距今有近6000年历史。10月10日开始，浙江省考古研究所与象山县文管会办公室联合发掘塔山遗址三期。木器和动物骨头等有机质遗物的发现，弥补了塔山遗址一期、二期发掘对塔山遗址认识上的不足 [2]  。</p>
+				<hr >
+				</div>
+				<div class="main_pic">
+					<img src="../image/ta1.jpg">
+				</div>
+				<div class="left">
+					<h2>遗址发现</h2>
+						<p>记者在塔山遗址三期挖掘现场看到，民工们在考古专家的指导下有条不紊地细心铲挖，10个探方已分别挖至1米多深，其中的几个探方中露出的古建筑遗迹、红烧土遗迹、石砌古井已具规模。而在遗址旁边是一块菜地，上面长着绿油油的小青菜、白萝卜等，与十个探方成鲜明对比。</p>
+						<p>塔山遗址发掘考古队领队、省考古研究所研究员蒋乐平介绍，近一月来，发掘工作进展顺利，已挖掘至第四文化层，属于商周时期地层。从发掘出土的器物和露出古建筑、红烧土、古石井等遗迹来看，遗址发掘区在商周时期是居住区。此处地下水位比较高、湿度高，所以遗物保存相对比较完好。“根据前期的探孔调查估计，文化层最深可能达2.7米，我们有理由期待更多的发现。”蒋乐平说。</p>
+						<p>蒋乐平还向记者出示了一批近日发掘出土的器物，有春秋战国时期的青铜镞2枚、青铜戈1枚；商周时期的青铜鱼钩1枚，青铜削1件，石镞、石斧、石刀、陶网坠数十件，陶片数千片，其中比较完整的陶器有10余件；新石器时代的陀螺1个及其他一些木器和动物骨头；唐代“开元通宝”钱币600多枚。蒋乐平介绍，商周时期的青铜兵器在长江以南地区较少发现，在象山还是首次发现。另外，十几公分长的一枚青铜镞和青铜鱼钩保存十分完整，特别是青铜鱼钩以及陶网坠的发现，对研究渔文化史具有十分重要的意义，极大地丰富了象山历史文化的底蕴。木器和动物骨头等有机质遗物的发现，也弥补了塔山遗址一期、二期发掘对塔山遗址认识上的不足。</p>
+						<hr >
+				</div>
+				<div class="main_pic">
+					<img src="../image/ta2.jpg">
+				</div>
+				<div class="left">
+					<h2>发掘故事</h2>
+					<p>塔山遗址的发现，要追溯到上个世纪。1988年1月，象山中学学生励江一，运用已学得的历史、文物知识，发现了“塔山遗址”的文物，并向他的历史课外兴趣小组指导老师胡朝胜汇报。胡朝胜随即进行实地考察，认为这是很有保护价值的古代遗址，并立即上报县文管部门。后经各级文管单位试掘，确知有十分丰富的新石器时代至商周时期的文化堆积，有重要发掘价值。记者从蒋乐平处证实此说法，他还告诉记者，为此，有关部门还对师生两人进行了表彰。</p>
+					<p>“都过了快20年了，你们居然还能找到。”在一间简陋的办公室内，记者见到了戴着眼镜一脸书生气的励江一。在了解记者的来意后，励江一露出了腼腆的笑容。他告诉记者，当时发现塔山遗址只是一次偶然，当时那里还只是一个煤气站，一天他和父亲去换煤气，在路上发现工人正修路，不时会在土堆里出现破损的带有花纹的陶片，好奇的他便随手捡起一块陶片放在口袋里带回家。由于父亲也比较喜欢历史，励江一便将这一发现告诉了父亲，随后父子俩便经常在周末，拿着小铁锹来到煤气站附近，模仿考古专家像模像样地“考古”，而每次父子俩都能挖到一些碎陶片，细心的励江一在家中对这些陶片仔细“研究”，他发现这些碎片可以拼装成一个陶罐，这一下激发了父子俩的兴趣。</p>
+					<p>在挖了八九次后，一个重大收获让他们振奋：励江一挖出了一个完整的陶罐。考虑到可能是文物，励江一便将陶罐交给了历史课外兴趣小组指导老师胡朝胜，随后便出现了“塔山遗址”。为了表示鼓励，有关部门还奖励给了励江一200元，学校也给他颁发了证书，一时间励江一成了学校里的名人。“不过时间太久远，证书已经找不到了。”励江一笑笑，当年无心的发现，并没有给他造成太大的影响。</p>
+					<hr >
+				</div>
+				<div class="main_pic">
+					<img src="../image/ta3.jpg">
+				</div>
+				<div class="left">
+					<h2>发掘成果</h2>
+					<p>塔山遗址先后于1990年9月28日至12月24日和1993年3月13日至6月12日作了两期发掘，首期发掘面积350平方米，二期250平方米。
+塔山遗址一、二期发掘的史前遗存主要包括两个方面的内容，一是史前人类的居住地，其中包括各种人为的建筑遗迹；二为墓葬，包括38座分布密集且有规律的氏族部落成人墓葬，其中出土的38具人体遗骸保存较为完整。上海自然博物馆研究员黄象洪鉴定后认为：这批遗骸年代之久、数量之多、保存之好为我国长江以南所罕见。它对研究长江以南地区种族人类学具有极高的价值。遗址文化堆积层厚80至230厘米，分十层，主要内容是各个时期人类生活堆积，年代最早近6000年。</p>
+					<p>沉睡地下6000年之久的史前墓地重见天日，一大批器物陆续出土。出土器物分三大类：一是陶器，二是石器，三是玉器，未见木器和骨器。塔山遗址出土的数十座墓葬，其形制和葬式，以及陶、石、玉器等随葬品的组合，反映了当时塔山人处于河姆渡文化和马家浜文化的相遇而不完全相融状态，是江南地区近年来尤其是浙江地区新石器时代考古的一次重大收获。遗址中大量人体骨架、大型兽骨和各类器物的出土，为研究体质人类学和东南沿海的地理环境变迁、当时社会情状，提供了极为可贵的实物资料。</p>
+					<p>塔山遗址三期于2007年10月10日开始发掘，发掘面积1000平方米，分10个方进行发掘。最深一方已发掘至1.5米，发现了4个文化层，并在开挖排水沟时初步发现第4层下的新石器时代良渚文化层。出土器物除了10余件商周时期的青铜器外，还有大量的陶片，以及一些新石器时期的木器和动物骨头，600多枚唐代钱币。在遗址中，还发现了一口春秋战国时期的水井和一条曲尺形的石砌墙基。 [3] 
+国家文物局评价：“象山塔山史前文化遗址的发现和发掘，体现了我国考古文化的新成就，对研究江南地区史前文化乃至中国历史都具有重要意义。”</p>
+<hr >
+				</div>
+				<div class="main_pic">
+					<img src="../image/ta4.jpg">
+				</div>
+			</div>
+			
+
+		</div>
+		<div id="bottom" >
+			<h1><a href="../renwen.html">回到人文首页</a></h1>
+		</div>
+		<div class="clear"></div>
+		<div class="footer">
+			<ul class="foot_list">
+				<a href="javascript:scroll(0,0)"><h1 align="middle" >Copyright © 2021 CJLU/2000303224  E-mail:rqzhu777@163.com. All rights reserved.</h1></a>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</body>
+</html>

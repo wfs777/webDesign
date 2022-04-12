@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../css/hometown_css.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/sene.css"/>
+		<title>象山影视城</title>
+	</head>
+	<body>
+		<div id="top_line">
+			<div class="top_left">
+				<a href="#">welcome to 象山</a>
+			</div>
+			<form action="demo.html" onsubmit="return checkForm()">
+			        <div id="login-header">
+			        	<tr>
+			        		 <td ><a href="javascript:void(0)">注册</a><a id="adminBtn" href="javascript:void(0)">登录|</a></td>
+			        	</tr>
+			        </div>
+			        <!-- 登陆框主体 -->
+			        <div id="login" class="login">
+			            <!-- 登陆框标题 -->
+			            <div id="login-title" class="login-title">
+			                登陆
+			                <span><a id="closeBtn" href="javascript:void(0)">关闭</a></span>
+			            </div>
+			            <!-- 登陆框表单 -->
+			            <div id="login-form">
+			                <div class="login-input">
+			                    <label>用户名</label>
+			                    <input id="value"   onkeyup="hint()" type="text" Name="Userame" placeholder="用户名" class="list-input"/>
+			                    <span id="hint" style="color: #808080;">用户名长度不能小于六</span>
+			                </div>
+							<div class="login-input">
+							    <label>日期</label>
+							    <input id="date_value"   onkeyup="checkDate()" type="text" name="date" placeholder="日期" class="list-input"/>
+							    <span id="date_hint" style="color: #808080;">日期格式年-月-日</span>
+							</div>
+			                <div class="login-input">
+			                    <label>密码</label>
+			                    <input id="pass_value"   onkeyup="checkPass()" type="password" name="password" placeholder="密码" class="list-input"/>
+			                    <span id="pass_hint" style="color: #808080;">密码长度不能小于六</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>确认密码</label>
+			                    <input id="passpass_value"  onkeyup="checkPassPass()" type="password" name="password" placeholder="确认密码"class="list-input" />
+			                    <span id="passpass_hint" style="color: #808080;">两次密码要一致</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>邮箱</label>
+			                    <input id="email"   onkeyup="emailCheck()" type="email" name="email" placeholder="邮箱" class="list-input"/>
+			                    <span id="email_hint"></span>
+			                </div>
+			                <div class="login-input">
+			                    <label>手机号</label>
+			                    <input id="phone" type="text"   onkeyup="phoneCheck()" Name="Phone" placeholder="手机号"class="list-input">
+			                    <span id="phone_hint"></span>
+			                </div>
+			            </div>
+			            <!-- 登陆框登陆按钮 -->
+			            <input type="submit"  id="loginSubmit" value="提交" class="loginSubmit"/>
+			        </div>
+			
+			        <!-- 遮盖层 -->
+			        <div id="bg" class="bg">sada</div>
+			</form>
+			<script type="text/javascript" src="../js/login.js">
+				</script>
+		</div>
+		
+		<div class="head">
+			<div class="head_img">
+				<img src="../image/cjlu.jpg" height="100" >
+			</div>
+			<div class="head_font" style="font-size: 20px;">
+				<h1>web期末大作业 未方山</h1>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<nav>
+		    <div class="wrap">
+		            <ul class="level">
+		                <li><a href="../hometown-index.html">首页</a></li>
+		                <li>
+		                    <a href="../senery.html">象山美景</a>
+		                    <ul class="two">
+		                        <li><a href="../senery/songlanshan.html" style="color: #474747;">松兰山</a></li>
+		                        <li><a href="../senery/yingshicheng.html" style="color: #474747;">象山影视城</a></li>
+		                        <li><a href="../senery/huaaodao.html" style="color: #474747;">花岙岛</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="../renwen.html">象山人文</a>
+		                    <ul class="two">
+		                        <li><a href="../renwen/mingren.html" style="color: #474747;">象山名人</a></li>
+								<li><a href="../renwen/yishuguan.html" style="color: #474747;">艺术馆</a></li>
+								<li><a href="../renwen/tashan.html" style="color: #474747;">塔山遗址</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="../food.html">象山特产与美食</a>
+		                    <ul class="two">
+		                        <li><a href="../food/seafood.html" style="color: #474747;">海鲜</a></li>
+		                        <li><a href="../food/dianxin.html" style="color: #474747;">点心</a></li>
+		                        <li><a href="../food/haichanping.html" style="color: #474747;">海产品</a></li>
+		                    </ul>
+		                </li>
+						<li>
+						    <a href="">时代广场</a>
+						</li>
+		                <li>
+		                    <a href="../profile/frame(key).html">个人简历</a>
+		                </li>
+		            </ul>
+		        </div>
+		    </nav>	
+		<div class="clear"></div>
+		<div id="head_pic">
+			<img src="../image/head.jpg" >
+		</div>
+		<div id="main">
+			<div id="m">
+				<h1>象山影视城</h1>
+				<p>  象山影视城位于浙江省宁波市象山县新桥镇大塘港生态休闲旅游区块宁波影视文化产业区内，总占地面积1176亩。以灵岩山为大背景，围绕游客体验性、影视趣味性、旅游互动性，打造中国首个实景电影主题乐园。
+自2005年开城以来，象山影视城相继接待拍摄《神雕侠侣》《赵氏孤儿》《西游记》《大轰炸》《琅琊榜》《芈月传》《太子妃升职记》《三生三世十里桃花》《长安十二时辰》《斗罗大陆》 [65]  《青簪行》 [66]  《庆余年》 [67]  等1500多部影视作品 [43]  。同时，影视城摄影棚面积超35万平方米，居全国第一；年接待剧组量过百，居全国第二；年接待游客量突破200万人次，居全国影视基地第三。 [68]  除大量明星拍戏外，还不定期举行影迷见面会，让游客“零距离”接触明星。 [1-2]  [4-6] 
+游客在影城中可亲身体验电影声音合成制作，木偶戏、皮影戏、励志魔幻剧、“天地英雄”情景剧、影视梦工厂体验剧等，过年期间有影视庙会，早春时节有踏青节、风筝节，“五一”、“十一”有影视嘉年华，暑期盛夏有万人狂欢泼水节等等。截至2019年，影视城累计接待游客超过1500万人次。
+象山影视城是中国十大影视基地、国家AAAA级景区、中国魅力景区，还荣膺“亚洲金旅奖·首批最具特色魅力旅游目的地”“2017年度旅游景区人气奖”称号。2015年至2017年，影视嘉年华旅游节庆连续荣获宁波旅游节社会办节一等奖。 [7]  象山影视城已逐步形成场景制作、服装道具、群众演员、吃住服务、购物消费影视旅游的产业链，品牌价值达102.6亿元 [44]  ，“宁波品牌百强榜”文旅类第一名 [8]  。</p>
+				<hr style="border:2px solid #999999 ;">
+			</div>
+			<div id="container">
+				<div class="left">
+					<h2>绝情谷</h2>
+					<p>在绝情谷的入口处有中国最大的榕树林，不过是人工仿造的，耗资270万元，这片榕树林是用钢筋混凝土做成骨架，然后用水泥灰沙塑形的。古榕盘根错节，树冠平伸而出，枝叶繁茂，树干白绿相间，绿色为地衣藓苔，寄生植物爬满树干。出了榕树林，就到了绝情谷中的公孙府，公孙府共有大厅、书房、经房、丹房、剑房、芝房六大独立的建筑组成。</p>
+				</div>
+				<div class="main_pic">
+					<img src="../image/cheng1.jpg">
+				</div>
+				<div class="left">
+					<h2>陆家庄</h2>
+					<p>陆家庄在《神雕侠侣》中是陆展元、陆立鼎两兄弟的庄院，小说第一回中写道的故事情节就是在这府院发生的。陆家庄是影城中相对独立的一个景点，主要由码头、风雨亭、路棚、陆家庄院和农户院组成。这里三面有湖，展现的是古代农村自然淳朴的风格和农家田园风光。 [25] </p>
+				</div>
+				<div class="main_pic">
+					<img src="../image/cheng2.jpg">
+				</div>
+				<div class="left">
+					<h2>春秋战国城</h2>
+					<p>春秋战国城位于象山影视城的东面，是象山影视城二期的工程，为配合陈凯歌电影《赵氏孤儿》而搭建，由城墙、城楼、桃园行宫、公孙府、庄姬府、屠岸府、赵盾府、军营、街道、广场及贫民住宅等组成。不仅在外部风格特征上极力复原时代风貌，还注重挖掘历史文化内涵，做足影视文化文章，内设“春秋战国文化”与“陈凯歌与《赵氏孤儿》”两大展厅。</p>
+				</div>
+				<div class="main_pic">
+					<img src="../image/cheng3.jpg">
+				</div>
+			</div>
+		</div>
+		<div id="bottom">
+			<h1><a href="huaaodao.html">下一节->花岙岛</a></h1>
+		</div>
+		<div class="clear"></div>
+		<div class="footer">
+			<ul class="foot_list">
+				<a href="javascript:scroll(0,0)"><h1 align="middle" >Copyright © 2021 2000303224 E-mail:rqzhu777@163.com. All rights reserved.</h1></a>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../css/hometown_css.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/irenwen.css"/>
+		<script>
+		    function showDiv(str) {
+		        var divs = []; 
+		        for(var i = 0;i < 3;i++) {
+		            divs[i] = document.getElementById("div" + i);
+		            divs[i].style.display = "none";
+		        }
+		        document.getElementById(str).style.display = "block";               
+		    }
+		</script>
+		<title>象山艺术馆</title>
+	</head>
+	
+	<body>
+		<div id="top_line">
+			<div class="top_left">
+				<a href="#">welcome to 象山</a>
+			</div>
+			<form action="demo.html" onsubmit="return checkForm()">
+			        <div id="login-header">
+			        	<tr>
+			        		 <td ><a href="javascript:void(0)">注册</a><a id="adminBtn" href="javascript:void(0)">登录|</a></td>
+			        	</tr>
+			        </div>
+			        <!-- 登陆框主体 -->
+			        <div id="login" class="login">
+			            <!-- 登陆框标题 -->
+			            <div id="login-title" class="login-title">
+			                登陆
+			                <span><a id="closeBtn" href="javascript:void(0)">关闭</a></span>
+			            </div>
+			            <!-- 登陆框表单 -->
+			            <div id="login-form">
+			                <div class="login-input">
+			                    <label>用户名</label>
+			                    <input id="value"   onkeyup="hint()" type="text" Name="Userame" placeholder="用户名" class="list-input"/>
+			                    <span id="hint" style="color: #808080;">用户名长度不能小于六</span>
+			                </div>
+							<div class="login-input">
+							    <label>日期</label>
+							    <input id="date_value"   onkeyup="checkDate()" type="text" name="date" placeholder="日期" class="list-input"/>
+							    <span id="date_hint" style="color: #808080;">日期格式年-月-日</span>
+							</div>
+			                <div class="login-input">
+			                    <label>密码</label>
+			                    <input id="pass_value"   onkeyup="checkPass()" type="password" name="password" placeholder="密码" class="list-input"/>
+			                    <span id="pass_hint" style="color: #808080;">密码长度不能小于六</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>确认密码</label>
+			                    <input id="passpass_value"  onkeyup="checkPassPass()" type="password" name="password" placeholder="确认密码"class="list-input" />
+			                    <span id="passpass_hint" style="color: #808080;">两次密码要一致</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>邮箱</label>
+			                    <input id="email"   onkeyup="emailCheck()" type="email" name="email" placeholder="邮箱" class="list-input"/>
+			                    <span id="email_hint"></span>
+			                </div>
+			                <div class="login-input">
+			                    <label>手机号</label>
+			                    <input id="phone" type="text"   onkeyup="phoneCheck()" Name="Phone" placeholder="手机号"class="list-input">
+			                    <span id="phone_hint"></span>
+			                </div>
+			            </div>
+			            <!-- 登陆框登陆按钮 -->
+			            <input type="submit"  id="loginSubmit" value="提交" class="loginSubmit"/>
+			        </div>
+			
+			        <!-- 遮盖层 -->
+			        <div id="bg" class="bg">sada</div>
+			</form>
+			<script type="text/javascript" src="../js/login.js">
+				</script>
+		</div>
+		
+		<div class="head">
+			<div class="head_img">
+				<img src="../image/cjlu.jpg" height="100" >
+			</div>
+			<div class="head_font" style="font-size: 20px;">
+				<h1>web期末大作业 未方山</h1>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<nav>
+		    <div class="wrap">
+		            <ul class="level">
+		                <li><a href="../hometown-index.html">首页</a></li>
+		                <li>
+		                    <a href="../senery.html">象山美景</a>
+		                    <ul class="two">
+		                        <li><a href="../senery/songlanshan.html" style="color: #474747;">松兰山</a></li>
+		                        <li><a href="../senery/yingshicheng.html" style="color: #474747;">象山影视城</a></li>
+		                        <li><a href="../senery/huaaodao.html" style="color: #474747;">花岙岛</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="../renwen.html">象山人文</a>
+		                    <ul class="two">
+		                        <li><a href="mingren.html" style="color: #474747;">象山名人</a></li>
+								<li><a href="yishuguan.html" style="color: #474747;">艺术馆</a></li>
+								<li><a href="tashan.html" style="color: #474747;">塔山遗址</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="../food.html">象山特产与美食</a>
+		                    <ul class="two">
+		                        <li><a href="../food/seafood.html" style="color: #474747;">海鲜</a></li>
+		                        <li><a href="../food/dianxin.html" style="color: #474747;">点心</a></li>
+		                        <li><a href="../food/haichanping.html" style="color: #474747;">海产品</a></li>
+		                    </ul>
+		                </li>
+						<li>
+						    <a href="../fashion/shop/shoppingIndex.html">时代广场</a>
+						</li>
+		                <li>
+		                    <a href="../profile/frame(key).html">个人简历</a>
+		                </li>
+		            </ul>
+		        </div>
+		    </nav>	
+		<div class="clear"></div>
+		<div id="head_pic">
+			<img src="../image/head.jpg" >
+		</div>
+			<div class="left">
+				<div class="left_list">
+					<div id="left_nav">	
+					<ul>
+						<li><span onclick="showDiv('div0');">德和根艺美术馆-></span></li>
+						<li><span onclick="showDiv('div1');">象山才华剪纸艺术馆-></span></li>
+						<li><span onclick="showDiv('div2');">陈汉章故居-></span></li>
+					<ul>
+					</div>
+				</div>
+			</div>
+			<div id="right_nav">
+			    <div id="div0">
+					<div class="right">
+						<div class="main_pic2" >
+							<img src="../image/guan1.jpg">
+						</div>
+						<div class="right_font2">
+							<h2>德和根艺美术馆</h2>
+							<p>德和根艺美术馆位于象山县丹东街道东谷湖旁，由政府划拨5.1亩土地，竹根雕大师张德和本人投资1000万元建成的。该建筑由清华大学教授、两院院士、国际知名建筑设计专家、建筑界大师吴良镛先生偕其高足宋晔皓博士免费为张德和设计了根艺美术馆，是我国规模最大的根雕艺术专题博物馆。这座明显带有徽式建筑风格的建筑内展馆展出了40位象山根雕艺人创作的200多件竹根雕精品，集中展现了新一代“浙江名雕”独特的艺术魅力。
+							</p>
+							<p>美术馆主体结构，采用江南四合院园林式格局，高低错落有致、楼台回廊一步一景、古色古香。力争成为象山竹根雕对外交流展示的平台和集创作研究培训于一体的根雕艺术中心。内设“张德和根雕艺术作品陈列室”、“张德和古旧民间工艺藏品陈列室”及“象山民间艺术精品陈列室”，附设“张德和根艺研究所”、“中国根艺高级培训班”、“学术交流大厅”、“文化休闲茶室”、“工艺礼品商场”等为一体的多功能文化场馆。中央美术学院院长潘公凯，著名文化学者余秋雨先生等不少名也曾光临此处，均有高度的评价。该馆抱着以根会友，以艺养馆的原则，旨在为弘扬民族先进文化优秀工艺、守护和美化人类的精神花园谱写新篇章！</p>
+						</div>
+					</div>
+					
+				</div>
+			    <div id="div1" class="hidden">
+					<div class="right">
+						<div class="main_pic2" >
+							<img src="../image/guan2.jpg">
+						</div>
+						<div class="right_font2">
+							<h2>象山才华剪纸艺术馆</h2>
+							<p> 象山才华剪纸艺术馆建成于2008年5月，同年11月份正式对外开放，是全国首家剪纸艺术馆，以浙江省民间艺术家、宁波市十佳民间艺术家，两次荣获上海世界吉尼斯之最谢才华人名冠名，展馆所在地是象山县东陈乡樟岙村，距县城20余里，该村年代久远，建于宋末年(大约公元1271年)，至今有730余年。因村庄座落处“四面环山，樟树遍野”而得名樟岙。该村民风淳朴，民间文化底蕴深厚，是我县农民画艺术家高妙兰和剪纸艺术家谢才华先生的家乡。现村周边存有千年古樟、古祠堂、古道、古桥、古溪，散发着古朴的气韵。展馆占地总面积35亩，整体建筑为徽派设计风格，与自然环境浑然一体，隐僻典雅。馆内现珍藏、陈列着谢才华先生捐赠的1万多件剪纸精品，展馆设有展览厅、创作室、培训室、接待厅等，每年接待前来参观学习宾客大约5万人左右，是浙江省廉政文化教育基地，也是浙江省非物质文化遗产传承基地。</p>
+						</div>
+						
+					</div>
+					
+				</div>
+			    <div id="div2" class="hidden">
+						<div class="right">
+							<div class="main_pic2" >
+								<img src="../image/guan3.jpg">
+							</div>
+							<div class="right_font2">
+								<h2>陈汉章故居</h2>
+								<p> “学圃堂”正屋楼房五开间，明间侧缝五架，前廊后步，前廊置卷棚；两厢为三开间平房，天井铺砌石板，辟石库大门。“缀学堂”正屋与两厢都为楼房，正屋九开间，明间侧缝七架前后廊，前廊置卷棚，梢间与次梢间处置楼梯；天井石板铺砌，辟有角尺形两重石库大门。故居造作讲究、体现了书香门第人家在建筑上的文化艺术意境。现故居保存基本完整。2007年10月30日被公布为第六批象山县级文保单位。</p>
+							</div>
+						</div>
+				</div>
+			   
+			</div>
+		<div id="bottom" style="margin-top: 350px;">
+			<h1><a href="tashan.html">下一节->塔山遗址</a></h1>
+		</div>
+		<div class="clear"></div>
+		<div class="footer">
+			<ul class="foot_list">
+				<a href="javascript:scroll(0,0)"><h1 align="middle" >Copyright © 2021 2000303224 E-mail:rqzhu777@163.com. All rights reserved.</h1></a>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</body>
+</html>

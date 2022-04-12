@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="image/ico.ico" type="image/x-icon" />
+		<link rel="icon" type="image/x-icon" href="image/ico.ico"/>
+		<title>象山人文</title>
+		<link rel="stylesheet" type="text/css" href="css/hometown_css.css">
+		<link rel="stylesheet" type="text/css" href="css/renwen_css.css"/>
+	</head>
+	<body>
+		<div id="top_line">
+			<div class="top_left">
+				<a href="#">welcome to 象山</a>
+			</div>
+			<form action="demo.html" onsubmit="return checkForm()">
+			        <div id="login-header">
+			        	<tr>
+			        		 <td ><a href="javascript:void(0)">注册</a><a id="adminBtn" href="javascript:void(0)">登录|</a></td>
+			        	</tr>
+			        </div>
+			        <!-- 登陆框主体 -->
+			        <div id="login" class="login">
+			            <!-- 登陆框标题 -->
+			            <div id="login-title" class="login-title">
+			                登陆
+			                <span><a id="closeBtn" href="javascript:void(0)">关闭</a></span>
+			            </div>
+			            <!-- 登陆框表单 -->
+			            <div id="login-form">
+			                <div class="login-input">
+			                    <label>用户名</label>
+			                    <input id="value"   onkeyup="hint()" type="text" Name="Userame" placeholder="用户名" class="list-input"/>
+			                    <span id="hint" style="color: #808080;">用户名长度不能小于六</span>
+			                </div>
+							<div class="login-input">
+							    <label>日期</label>
+							    <input id="date_value"   onkeyup="checkDate()" type="text" name="date" placeholder="日期" class="list-input"/>
+							    <span id="date_hint" style="color: #808080;">日期格式年-月-日</span>
+							</div>
+			                <div class="login-input">
+			                    <label>密码</label>
+			                    <input id="pass_value"   onkeyup="checkPass()" type="password" name="password" placeholder="密码" class="list-input"/>
+			                    <span id="pass_hint" style="color: #808080;">密码长度不能小于六</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>确认密码</label>
+			                    <input id="passpass_value"  onkeyup="checkPassPass()" type="password" name="password" placeholder="确认密码"class="list-input" />
+			                    <span id="passpass_hint" style="color: #808080;">两次密码要一致</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>邮箱</label>
+			                    <input id="email"   onkeyup="emailCheck()" type="email" name="email" placeholder="邮箱" class="list-input"/>
+			                    <span id="email_hint"></span>
+			                </div>
+			                <div class="login-input">
+			                    <label>手机号</label>
+			                    <input id="phone" type="text"   onkeyup="phoneCheck()" Name="Phone" placeholder="手机号"class="list-input">
+			                    <span id="phone_hint"></span>
+			                </div>
+			            </div>
+			            <!-- 登陆框登陆按钮 -->
+			            <input type="submit"  id="loginSubmit" value="提交" class="loginSubmit"/>
+			        </div>
+			
+			        <!-- 遮盖层 -->
+			        <div id="bg" class="bg">sada</div>
+			</form>
+			<script type="text/javascript" src="js/login.js">
+				</script>
+		</div>
+		
+		<div class="head">
+			<div class="head_img">
+				<img src="image/cjlu.jpg" height="100" >
+			</div>
+			<div class="head_font">
+				<h1>web期末大作业 未方山</h1>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<nav>
+		    <div class="wrap">
+		            <ul class="level">
+		                <li><a href="hometown-index.html">首页</a></li>
+		                <li>
+		                    <a href="senery.html">象山美景</a>
+		                    <ul class="two">
+		                        <li><a href="senery/songlanshan.html" style="color: #474747;">松兰山</a></li>
+		                        <li><a href="senery/yingshicheng.html" style="color: #474747;">象山影视城</a></li>
+		                        <li><a href="senery/huaaodao.html" style="color: #474747;">花岙岛</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="renwen.html">象山人文</a>
+		                    <ul class="two">
+		                        <li><a href="renwen/mingren.html" style="color: #474747;">象山名人</a></li>
+								<li><a href="renwen/yishuguan.html" style="color: #474747;">艺术馆</a></li>
+								<li><a href="renwen/tashan.html" style="color: #474747;">塔山遗址</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="food.html">象山特产与美食</a>
+		                    <ul class="two">
+		                        <li><a href="food/seafood.html" style="color: #474747;">海鲜</a></li>
+		                        <li><a href="food/dianxin.html" style="color: #474747;">点心</a></li>
+		                        <li><a href="food/haichanping.html" style="color: #474747;">海产品</a></li>
+		                    </ul>
+		                </li>
+						<li>
+						    <a href="fashion/shop/shoppingIndex.html">时代广场</a>
+						</li>
+		                <li>
+		                    <a href="profile/frame(key).html">个人简历</a>
+		                </li>
+		            </ul>
+		        </div>
+		    </nav>	
+		<div class="clear"></div>
+		<div id="head_pic">
+			<img src="image/head.JPG" >
+		</div>
+		<div class="main-bg">
+		    <div class="container">
+		        <div class="main-wrp">
+		            <div class="artists">
+		                <div class="product-grids">
+		                    <div class="bloder-content">
+		                        <a href="renwen/mingren.html"><h6>象山名人</h6></a>
+		                        <div class="product-grid">
+		                            <img src="./image/pp1.jpeg" />
+		                            <h4>陈汉章</h4>
+		                        </div>
+		                        <div class="product-grid">
+		                            <img src="./image/pp2.jpeg" />
+		                            <h4>陈纯</h4>
+		                        </div>
+		                        <div class="product-grid">
+		                            <img src="./image/pp3.jpeg" />
+		                            <h4>梵琦</h4>
+		                        </div>
+		                        <div class="product-grid">
+		                            <img src="./image/pp4.jpeg" />
+		                            <h4>王家谟</h4>
+		                        </div>
+		                        <div class="product-grid">
+		                            <img src="./image/pp5.jpeg" />
+		                            <h4>俞士吉</h4>
+		                        </div>
+		                        <div class="product-grid">
+		                            <img src="./image/pp6.jpeg" />
+		                            <h4>白银飞</h4>
+		                        </div>
+		                       
+		                    </div>
+		                </div>
+		            </div>
+		            <div class="clear"></div>
+		        </div>
+		    </div>
+		    <div class="clear"></div>
+		    </div>
+			<div class="main-bg">
+			    <div class="container">
+			        <div class="main-wrp">
+			            <div class="artists">
+			                <div class="product-grids">
+			                    <div class="bloder-content">
+			                        <a href="renwen/yishuguan.html"><h6>象山艺术馆</h6></a>
+			                        <div class="product-grid">
+			                            <img src="./image/guan1.jpg" />
+			                            <h4>德和根艺美术馆</h4>
+			                        </div>
+			                        <div class="product-grid">
+			                            <img src="./image/guan2.jpg" />
+			                            <h4>象山才华剪纸艺术馆</h4>
+			                        </div>
+			                        <div class="product-grid">
+			                            <img src="./image/guan3.jpg" />
+			                            <h4>花岙岛</h4>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			            <div class="clear"></div>
+			        </div>
+			    </div>
+			    <div class="clear"></div>
+			    </div>
+				<div class="main-bg">
+				    <div class="container">
+				        <div class="main-wrp">
+				            <div class="artists">
+				                <div class="product-grids">
+				                    <div class="bloder-content">
+				                        <a href="renwen/tashan.html"><h6>塔山文化</h6></a>		                       
+				                        <div class="product-grid" id="tashan">
+				                            <img src="./image/guan2.jpg" />
+				                            <h4>塔山遗址</h4>
+				                        </div>
+				                        
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="clear"></div>
+				        </div>
+				    </div>
+				    <div class="clear"></div>
+				</div>
+			
+
+		
+	<div class="clear"></div>
+	<div class="footer">
+		<ul class="foot_list">
+			<a href="javascript:scroll(0,0)"><h1 align="middle" >Copyright © 2021 CJLU/2000303224  E-mail:rqzhu777@163.com. All rights reserved.</h1></a>
+		</ul>
+	</div>
+	<div class="clear"></div>
+	</body>
+</html>

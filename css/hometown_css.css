@@ -1,0 +1,270 @@
+
+
+#head_pic img{
+	margin-left: 20px;
+	width: 97%;
+}
+.rollwindow{
+	width: 50%;
+	align-items: center;
+	margin: auto;
+	float: left;
+	margin-left: 20px;
+	background-color: #ffffff;
+	
+}
+.pic-nav{
+	margin-top: 10px;
+}
+    .focusBox {
+        position: absolute;
+        top: 650px;
+        width: 120px;
+        left: 50%;
+        margin-left: -380px;
+        list-style: none;
+    }
+    
+    .focusBox li {
+        float: left;
+        margin-right: 10px;
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        background: gray;
+        cursor: pointer;
+    }
+    
+    .focusBox li.cur {
+        background: #f60;
+        opacity: 0.6;
+        filter: alpha(opacity=60);
+    }
+	.pic-nav .pic_right{
+		margin-right: 20px;
+		background-color: #8ee0ff;
+		width: 43%;
+		float: right;
+	}
+	.pic_right{
+		border-left: #1E90FF solid 5px;
+		border-radius:5px;
+	}
+#back {
+	float: right;
+}
+/* 弹出登陆框按钮 */
+			#top_line{
+				border-bottom: 1px solid #ccc;
+				background-color: #E8E8E8;
+				width: 100%;
+				float: left;
+			}
+            #login-header{
+				float: right;
+				font-family:"arial", verdana Helvetica, sans-serif;
+                text-align: center;
+                height: 30px;
+                line-height: 30px;
+            }
+			.top_left{
+				margin-left: 10px;
+				margin-top: 2px;
+				text-align: center;
+				float: left;
+				font-size: 15px;
+				color: black;
+			}
+			.top_left a:link{
+				color: black;
+			}
+			.top_left a:visited{
+				color: black;
+			}
+            #login-header a{
+				float: right;
+                font-size: 12px;
+                text-decoration: none;
+                color: black;
+            }
+
+            /* 登陆框主体 */
+            .login{
+                position: absolute;
+                width: 512px;
+                height: 450px;
+                z-index: 9999;
+                display: none;
+                background-color: white;
+                /* 这里要注意绝对定位的盒子怎么在屏幕显示居中 */
+                left: 50%;
+                margin-left: -256px;
+                margin-top: 142px;
+                border: 1px solid gray;
+            }
+            /* 登陆框标题 */
+            .login-title{
+                width: 100%;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                margin-bottom: 20px;
+                cursor: move;
+            }
+            .login-title span a{
+                text-decoration: none;
+                border: 1px solid gray;
+                font-size: 12px;
+                color: black;
+                border-radius: 20px;
+                width: 40px;
+                height: 50px;
+                background-color: #fff;
+                position: absolute;
+                top: -20px;
+                right: -20px;
+            }
+
+            /* 登陆表单 */
+            .login-input{
+                margin: 20px 0px 30px 0px;
+            }
+            .login-input label{
+                float: left;
+                height: 35px;
+                line-height: 35px;
+                width: 90px;
+                padding-left: 20px;
+                text-align: right;
+                font-size: 20px;
+            }
+            .login-input input.list-input{
+                height: 20px;
+                line-height: 20px;
+                width: 200px;
+                text-indent: 20px;
+            }
+            /* 登陆框登陆按钮 */
+            .loginSubmit{
+                width: 260px;
+                height: 40px;
+                text-align: center;
+                border: 1px solid gray;
+                background-color: white;
+                margin-left: 120px;
+
+            }
+
+            /* 遮盖层 */
+            .bg{
+                background-color: #000;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                position: fixed;
+                opacity: 0.3;
+                -webkit-opacity: 0.3;
+                -moz-opacity: 0.3;
+                display: none;
+            }
+
+		.true_main{
+			margin-top: -15px;
+			width: 100%;
+			background-color: #e6e6e6
+		}
+       .left-nav{
+            margin-top: 30px;
+            height: 468px;
+			width: 10px;
+            background: #ffffff;     
+        }
+        .left-nav .right{
+			margin-top: 100px;
+            width: 100%;
+            height: 470px;
+            margin: 0 auto;
+            background-image:url(../image/bg.jpeg);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: 10px  -40px ;
+            position: absolute;
+        }
+        .left-nav .right ul{
+            list-style: none;
+			margin-left: 45px;
+            width: 180px;
+            height: 420px;
+            background-color:#fbfcff;
+        }
+        .left-nav .right ul li{
+			margin-top: 30px;
+			margin-left: -30px;
+            height: 45px;
+            text-align: center;
+			align-items: center;
+            line-height:50px;
+            font-size: 15px;
+			width:200px;
+            cursor:pointer;
+        }
+        .left-nav .right ul li span:hover{
+            color: red;
+        }
+        .left-nav .right ul li .div2{
+			line-height:20px;
+			margin-left: 100px;
+            position:absolute;
+            left: 191px;
+            top: 0px;
+            display:none;
+            width: 798px;
+            height: 468px;
+            text-align: center;
+            box-shadow: 1px 1px 2px #e8e8e8;
+			background-color: #808080;
+        }
+		
+		
+		
+.clear{clear:both;
+		height: 5px;
+}
+.head_img{
+	margin-left: 70px;
+	float: left;
+}
+.head_font{
+	float: right;
+	font-size: 20px;
+	margin-right:300px ;
+}
+
+.floatr{float:right;}
+.wrap{width: 100%; background-color: #DDDDDD; margin-left: -20px;}    /* 对导航的内容设置一个主体为800px的宽并使其居中 */
+    .clear{clear: both;}  /* 清除浮动 */
+    a{text-decoration-line: none;}   /* 去掉默认a标签的下划线 */
+    .nav ul,li{list-style: none;color: #474747;}
+    nav .level>li{ float: left  ;width: 16.666666666%;text-align: center;background:#1371df;padding: 10px 0;font-size: 16px;transition: .4s;}
+    nav .level>li a{color: white;}
+    nav .level>li:hover{background: #29B7FE;}   /* 设置鼠标滑过后的样式 */
+	
+    nav .two{display: none;margin:auto; }  /* 先使二级菜单的内容隐藏 */
+    nav .level>li:hover .two{display: block;}   
+    nav .two li{padding: 5px 0;transition: .3s;cursor: pointer;width: 80%;}
+    nav .two li:hover{background: #F0F8FF;}
+
+
+.footer{width:100%;background:#efefef;height:25px;margin-top: 10px;}
+
+.foot_list{ width:100%;
+			margin: auto;
+			padding-top:10px; 
+			height:30px;
+			background-color:#cccccc;}
+.foot_list h1{
+	align-items: center;
+	margin-top: 2px;
+	font-size: 14px;
+	color: #474747;
+}

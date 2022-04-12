@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/hometown_css.css"/>
+		<link rel="stylesheet" type="text/css" href="css/food_css.css"/>
+		<link rel="icon" href="image/ico.ico" type="image/x-icon" />
+		<title>象山美食与特产</title>
+	</head>
+	<body>
+		<div id="top_line">
+			<div class="top_left">
+				<a href="#">welcome to 象山</a>
+			</div>
+			<form action="demo.html" onsubmit="return checkForm()">
+			        <div id="login-header">
+			        	<tr>
+			        		 <td ><a href="javascript:void(0)">注册</a><a id="adminBtn" href="javascript:void(0)">登录|</a></td>
+			        	</tr>
+			        </div>
+			        <!-- 登陆框主体 -->
+			        <div id="login" class="login">
+			            <!-- 登陆框标题 -->
+			            <div id="login-title" class="login-title">
+			                登陆
+			                <span><a id="closeBtn" href="javascript:void(0)">关闭</a></span>
+			            </div>
+			            <!-- 登陆框表单 -->
+			            <div id="login-form">
+			                <div class="login-input">
+			                    <label>用户名</label>
+			                    <input id="value"   onkeyup="hint()" type="text" Name="Userame" placeholder="用户名" class="list-input"/>
+			                    <span id="hint" style="color: #808080;">用户名长度不能小于六</span>
+			                </div>
+							<div class="login-input">
+							    <label>日期</label>
+							    <input id="date_value"   onkeyup="checkDate()" type="text" name="date" placeholder="日期" class="list-input"/>
+							    <span id="date_hint" style="color: #808080;">日期格式年-月-日</span>
+							</div>
+			                <div class="login-input">
+			                    <label>密码</label>
+			                    <input id="pass_value"   onkeyup="checkPass()" type="password" name="password" placeholder="密码" class="list-input"/>
+			                    <span id="pass_hint" style="color: #808080;">密码长度不能小于六</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>确认密码</label>
+			                    <input id="passpass_value"  onkeyup="checkPassPass()" type="password" name="password" placeholder="确认密码"class="list-input" />
+			                    <span id="passpass_hint" style="color: #808080;">两次密码要一致</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>邮箱</label>
+			                    <input id="email"   onkeyup="emailCheck()" type="email" name="email" placeholder="邮箱" class="list-input"/>
+			                    <span id="email_hint"></span>
+			                </div>
+			                <div class="login-input">
+			                    <label>手机号</label>
+			                    <input id="phone" type="text"   onkeyup="phoneCheck()" Name="Phone" placeholder="手机号"class="list-input">
+			                    <span id="phone_hint"></span>
+			                </div>
+			            </div>
+			            <!-- 登陆框登陆按钮 -->
+			            <input type="submit"  id="loginSubmit" value="提交" class="loginSubmit"/>
+			        </div>
+			
+			        <!-- 遮盖层 -->
+			        <div id="bg" class="bg">sada</div>
+			</form>
+			<script type="text/javascript" src="js/login.js">
+				</script>
+		</div>
+		
+		<div class="head">
+			<div class="head_img">
+				<img src="image/cjlu.jpg" height="100" >
+			</div>
+			<div class="head_font">
+				<h1>web期末大作业 未方山</h1>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<nav>
+		    <div class="wrap">
+		            <ul class="level">
+		                <li><a href="hometown-index.html">首页</a></li>
+		                <li>
+		                    <a href="senery.html">象山美景</a>
+		                    <ul class="two">
+		                        <li><a href="senery/songlanshan.html" style="color: #474747;">松兰山</a></li>
+		                        <li><a href="senery/yingshicheng.html" style="color: #474747;">象山影视城</a></li>
+		                        <li><a href="senery/huaaodao.html" style="color: #474747;">花岙岛</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="renwen.html">象山人文</a>
+		                    <ul class="two">
+		                        <li><a href="renwen/mingren.html" style="color: #474747;">象山名人</a></li>
+								<li><a href="renwen/yishuguan.html" style="color: #474747;">艺术馆</a></li>
+								<li><a href="renwen/tashan.html" style="color: #474747;">塔山遗址</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="food.html">象山特产与美食</a>
+		                    <ul class="two">
+		                        <li><a href="food/seafood.html" style="color: #474747;">海鲜</a></li>
+		                        <li><a href="food/dianxin.html" style="color: #474747;">点心</a></li>
+		                        <li><a href="food/haichanping.html" style="color: #474747;">海产品</a></li>
+		                    </ul>
+		                </li>
+						<li>
+						    <a href="fashion/shop/shoppingIndex.html">时代广场</a>
+						</li>
+		                <li>
+		                    <a href="profile/frame(key).html">个人简历</a>
+		                </li>
+		            </ul>
+		        </div>
+		    </nav>	
+		<div class="clear"></div>
+		<div id="head_pic">
+			<img src="image/head.JPG" >
+		</div>
+		<div class="clear"></div>
+		<div id="mian">
+			<div id="left">
+				<div id="container">
+					<div class="left_main">
+						<div class="title">
+							<a href="food/seafood.html"><h1>象山海鲜</h1></a>
+						</div>
+						<div class="main_img">
+							<img src="image/seafood.jpg.gif" >
+						</div>
+						<div class="main_font">
+							<p>我的家乡在象山，一个可能出了浙江省就再也不会有人知道的小地方。准确来说，象山是一个半岛县，属于宁波市，虽然是一个小地方，但是它却坐拥宁波80%的海洋，漫长的海岸线造就了不一样的半岛山民。
+							全国人民都知道“舟山”，因为我们的小学课本上写着，“浙江舟山，中国四大渔港之首”，但鲜有人知道在它南边百公里之外，也有一个很厉害的渔港，石浦港。石浦之于象山，就像沈家门之于舟山，是最重要的渔港，这里世代生活的讨海渔民，都是东海海鲜的活百科全书。</p>
+							<p>而象山的海鲜，刚刚好。最新鲜最好的海产，都是蒸的，原味才是最棒的海鲜体验，纵观中国漫长的海岸线，很多地方的海产也都是以蒸，白灼以体现原味为主。</p>
+						</div>
+					</div>
+				</div>
+				<div id="container">
+					<div class="left_main">
+						<div class="title">
+							<a href="food/dianxin.html"><h1>象山点心</h1></a>
+						</div>
+						<div class="main_img">
+							<img src="./image/dianxin.gif" >
+						</div>
+						<div class="main_font">
+							<p>一只酸甜的米馒头、一卷美味的麦饼筒、一个鲜香的萝卜团、一颗软糯的肉包汤馃……它们分散在象山的村村落落，或许就是许多象山人儿时的记忆。日前，县农办等多家单位联合发文公布：米馒头、麦饼筒、萝卜团、红豆团、麻糍、肉包汤馃、夹沙糕、灰汁团、笋壳粽、麦糕为最具象山特色的十大点心。这十种最能代表象山的点心里有甜有咸，有四季点心，也有时令点心，有逢年过节美食，也有日常小吃，品种涵盖全，口味选择多，是每一个象山人从小到大的舌尖挚爱。</p>
+						</div>
+					</div>
+				</div>
+				<div id="container">
+					<div class="left_main">
+						<div class="title">
+							<a href="food/haichanping.html"><h1>象山海产品</h1></a>
+						</div>
+						<div class="main_img">
+							<img src="image/haichanpin.gif" >
+						</div>
+						<div class="main_font">
+							<p>浙江省宁波市象山县，地处我国东海之滨，有着丰富的海洋资源，也是浙江省重要的海洋渔业产地。为探究今年秋冬季海鲜的价格，我来到了位于丹城的象山中心菜市场，这里是整个象山最大的农贸市场，其中面积最大的就是眼前这个海鲜交易市场。。</p>
+							<p>你几乎能买到象山市面上所有海鲜产品，各种鱼类、虾、螃蟹、贝类是应有尽有。我粗略看了下，卖梭子蟹的摊位相对是最多的，另外蟹的品质也是参差不齐。就比如这个摊位上的梭子蟹，那真是只只精品，不仅个头很大，蟹身饱满，而且每只都有满满的红膏。</p>
+							<p>螺类也是象山重要的特色海产之一，淡菜、蛏子、泥螺、香螺、辣螺、海螺、钉螺等各种贝壳摆满柜台。价格也都不贵，以象山最有名的渔山岛淡菜为例，半个手掌大小的淡菜才7块钱一斤，这个价格比我去年买的要便宜，我记得去年要10元左右。除了以上这些海产，市场上还有很多的品种与价格，需要的朋友可以去转转看看，绝对能淘到让你满意的海产品。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="right">
+				<div id="about">
+					<h2>海洋资源</h2>
+					<h3>水产</h3>
+					<p>象山紧靠大目洋、猫头洋、渔山三大渔场，发展渔业条件优越，系渔业大县。主要水产资源有黄鱼、带鱼、乌贼、鲳鱼、龙头鱼、鳓鱼、虾、蟹、石斑鱼、海鳗、海带、紫菜、泥螺等。</p>
+					<h3>海水化学</h3>
+					<p>每年各有两次盐度升降，5～6月间梅雨，降；9～11月间长江水南下，降；6月后，台湾暖流上，升；11月后海水垂直混合强烈，升。象山港海域，夏季盐度最高为28.13‰，三门湾海域为25.14‰，大目洋为26.5‰～30.8‰。</p>
+					<h3>海盐</h3>
+					<p>象山制盐历史悠久，唐时就利用海水煮盐，北宋设玉泉盐场。新中国成立后，围塘兴建白岩山盐场、大徐盐场、新桥盐场、旦门盐场、昌国盐场和花岙盐场等六大盐场，目前有盐田生产面积978.87公顷。年产量平均6万吨左右，质量名列省市前茅。</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div> 
+		<div class="clear"></div>
+		<div class="footer">
+			<ul class="foot_list">
+				<a href="javascript:scroll(0,0)"><h1 align="middle" >Copyright © 2021 CJLU/2000303224 E-mail:rqzhu777@163.com. All rights reserved.</h1></a>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</body>
+</html>
+

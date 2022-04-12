@@ -1,0 +1,46 @@
+.left{
+	margin-left: 50px;
+	float: left;
+	width: 65%;
+}
+.left p{
+	font-size: 16px;
+	color: #555555;
+}
+#m h1{
+	color: #006699;
+	font-family: "arial, helvetica, sans-serif";
+}
+#m h1:hover{
+	color: #1371DF;
+}
+#m p{
+	color: cornflowerblue;
+}
+.main_pic img{
+	margin-top: 70px;
+	margin-right: 50px;
+	width: 330px;
+	float: right;
+	background-color: #089BA2;
+}
+#m {
+	margin-left: 60px;
+	width: 90%;
+}
+#bottom {
+	margin-top: 30px;
+	margin-left: 50px;
+	height: 20px;
+	float: left;
+}
+#bottom a{
+	color: #1E90FF;
+
+}
+#bottom a:hover{
+	color: #CE2626;
+}
+#bottom h1{
+	font-size: 15px;
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	 <script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="image/ico.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/hometown_css.css"/>
+		<link rel="icon" href="image/ico.ico" type="image/x-icon" />
+		<title>象山</title>
+	</head>
+	<body>
+		<div id="top_line">
+			<div class="top_left">
+				<a href="#">welcome to 象山</a>
+			</div>
+			<form action="demo.html" onsubmit="return checkForm()">
+			        <div id="login-header">
+						<tr>
+							 <td ><a href="javascript:void(0)">注册</a><a id="adminBtn" href="javascript:void(0)">登录|</a></td>
+						</tr>
+			        </div>
+			        <!-- 登陆框主体 -->
+			        <div id="login" class="login">
+			            <!-- 登陆框标题 -->
+			            <div id="login-title" class="login-title">
+			                登陆
+			                <span><a id="closeBtn" href="javascript:void(0)">关闭</a></span>
+			            </div>
+			            <!-- 登陆框表单 -->
+			            <div id="login-form">
+			                <div class="login-input">
+			                    <label>用户名</label>
+			                    <input id="value"   onkeyup="hint()" type="text" Name="Userame" placeholder="用户名" class="list-input"/>
+			                    <span id="hint" style="color: #808080;">用户名长度不能小于六</span>
+			                </div>
+							<div class="login-input">
+							    <label>日期</label>
+							    <input id="date_value"   onkeyup="checkDate()" type="text" name="date" placeholder="日期" class="list-input"/>
+							    <span id="date_hint" style="color: #808080;">日期格式年-月-日</span>
+							</div>
+			                <div class="login-input">
+			                    <label>密码</label>
+			                    <input id="pass_value"   onkeyup="checkPass()" type="password" name="password" placeholder="密码" class="list-input"/>
+			                    <span id="pass_hint" style="color: #808080;">密码长度不能小于六</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>确认密码</label>
+			                    <input id="passpass_value"  onkeyup="checkPassPass()" type="password" name="password" placeholder="确认密码"class="list-input" />
+			                    <span id="passpass_hint" style="color: #808080;">两次密码要一致</span>
+			                </div>
+			                <div class="login-input">
+			                    <label>邮箱</label>
+			                    <input id="email"   onkeyup="emailCheck()" type="email" name="email" placeholder="邮箱" class="list-input"/>
+			                    <span id="email_hint"></span>
+			                </div>
+			                <div class="login-input">
+			                    <label>手机号</label>
+			                    <input id="phone" type="text"   onkeyup="phoneCheck()" Name="Phone" placeholder="手机号"class="list-input">
+			                    <span id="phone_hint"></span>
+			                </div>
+			            </div>
+			            <!-- 登陆框登陆按钮 -->
+			            <input type="submit"  id="loginSubmit" value="提交" class="loginSubmit"/>
+			        </div>
+			
+			        <!-- 遮盖层 -->
+			        <div id="bg" class="bg"></div>
+			</form>
+			<script type="text/javascript" src="js/login.js">
+				</script>
+		</div>
+		
+		<div class="head">
+			<div class="head_img">
+				<img src="image/cjlu.jpg" height="100" >
+			</div>
+			<div class="head_font">
+				<h1>web期末大作业 未方山</h1>
+			</div>
+		</div>
+		<div class="clear"></div>
+		
+		<nav>
+		    <div class="wrap">
+		            <ul class="level">
+		                <li><a href="hometown-index.html">首页</a></li>
+		                <li>
+		                    <a href="senery.html">象山美景</a>
+		                    <ul class="two">
+		                        <li><a href="senery/songlanshan.html" style="color: #474747;">松兰山</a></li>
+		                        <li><a href="senery/yingshicheng.html" style="color: #474747;">象山影视城</a></li>
+		                        <li><a href="senery/huaaodao.html" style="color: #474747;">花岙岛</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                    <a href="renwen.html">象山人文</a>
+		                    <ul class="two">
+		                        <li><a href="renwen/mingren.html" style="color: #474747;">象山名人</a></li>
+								<li><a href="renwen/yishuguan.html" style="color: #474747;">艺术馆</a></li>
+								<li><a href="renwen/tashan.html" style="color: #474747;">塔山遗址</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                   <a href="food.html">象山特产与美食</a>
+		                   <ul class="two">
+		                       <li><a href="food/seafood.html" style="color: #474747;">海鲜</a></li>
+		                       <li><a href="food/dianxin.html" style="color: #474747;">点心</a></li>
+		                       <li><a href="food/haichanping.html" style="color: #474747;">海产品</a></li>
+		                   </ul>
+		                </li>
+						<li>
+						    <a href="fashion/shop/shoppingIndex.html">时代广场</a>
+						</li>
+		                <li>
+		                    <a href="profile/frame(key).html">个人简历</a>
+		                </li>
+		            </ul>
+		        </div>
+		    </nav>	
+		<div class="clear"></div>
+		<div id="head_pic">
+			<img src="image/head.JPG" >
+		</div>
+		<div class="pic-nav">
+			<div class="rollwindow">
+				<script type="text/javascript" src="js/picSlide.js" ></script>
+				<div class="">
+					<img src="image/pic1.jpeg" width="690" height="350" id="focusImg" align="center">
+					 <ul class="focusBox">
+							  <li onclick="showPic(1);"></li>
+							  <li onclick="showPic(2);"></li>
+							  <li onclick="showPic(3);"></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="pic_right">
+				<div class="easy">
+					<p align="left" style="font-size: large; font-family: "arial, helvetica, sans-serif";">象山县简介</p>
+					<p>象山县是中国浙江省宁波市下辖县，位于东海之滨，居长三角地区南缘、浙江省东部沿海，位于象山港与三门湾之间，三面环海，两港相拥。唐神龙二年（公元706年）立县，因县城西北有山“形似伏象”，故名象山，由象山半岛东部及沿海608个岛礁组成。</p>
+					<p>象山县陆域面积1382平方公里，海域面积6618平方公里，海岸线长达925公里，占浙江省海岸线的1/8，其中大陆海岸线349公里，岛礁海岸线576公里。 [1]  2017年末，全县辖有3个街道、10个镇和5个乡，共有47个社区居委会（按2017年统计用区划代码计数则为49个） [2]  和490个行政村， [3]  根据第七次人口普查数据，截至2020年11月1日零时，象山县常住人口567665人。</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="clear"></div>
+		<div class="true_main" style="font-family: 宋体;">
+		<div class="left-nav">
+		        <div class="right">
+		            <ul>
+						<li>
+						    <span>历史沿革</span>
+						    <div class="div2">
+						        <h1>历史沿革</h1>
+						        <p>象山历史悠久。据塔山史前文化遗址出土文物考证，距今6000年前的新石器时代，就有先民于此生息繁衍。春秋时，象山为越国鄞地。
+汉为鄞县、回浦（后改章安）两县地。唐初分属宁海及鄮县。
+唐神龙二年（706），象山立县，治彭姥村，因村北有山，“形似伏象”，故名象山，县以山名，属台州，广德二年（764），改隶明州（明代改称宁波）。 [6] 
+民国元年，南田立县，治樊岙，同年4月，划象山东溪岭以南地入南田县，遂迁治石浦。翌年取消划并，南田还治樊岙。
+1940年，撤南田县，另置三门县，南田为其辖地。
+1949年7月8日，象山解放。10月成立县人民政府，属宁波专区，1952年，南田从三门划归象山。
+1954年4月，象山改隶舟山专区。
+1958年10月，宁海县并入象山，隶台州专区。
+1961年10月，复置宁海县，象山还治原境，回属宁波专区（后称地区）。
+1983年，宁波地、市合并，象山为宁波市属县。</p>
+						    </div>
+						</li>
+						<li>
+						    <span>经济概述</span>
+						    <div class="div2">
+						        <h1>经济概述</h1>
+						        <p>2017年，全县生产总值498.91亿元，按可比价格计算，比上年增长6.5%。分产业看，第一产业增加值73.16亿元，增长2.7%；第二产业增加值222.66亿元，增长5.5%，其中工业增加值169.53亿元，增长7.8%；第三产业增加值203.09亿元，增长9.1%。三次产业结构由上年的15.1:44.4:40.5，调整为14.7:44.6:40.7。人均生产总值90640元（按年平均汇率折算为9917美元），比上年增加9873元。 [7] 
+2020年，象山县实现地区生产总值563亿元，按可比价格计算，比上年增长1.6%。分产业看，第一产业增加值81.69亿元，增长2.7%；第二产业增加值234.65亿元，增长0.4%；第三产业增加值246.67亿元，增长2.4%。三次产业结构比例由上年的13.9：43.3：42.8调整为14.5:41.7:43.8。按户籍人口计算，人均生产总值103226元（按年平均汇率折算为14965美元），比上年增长1.8%。</p>
+						    </div>
+						</li>
+						<li>
+						    <span>交通发展</span>
+						    <div class="div2">
+						        <h1>交通建设</h1>
+						        <p>交通建设：截至2017年年底，全县拥有公路里程1389.499公里，公路网密度达100.2公里/百平方公里。其中，国道公路2条（象山港大桥、G527），28.208公里；省道公路3条（茅石线、盛宁线、象西线），129.199公里；县道公路16条，267.411公里；乡道公路38条，191.746公里；专用公路4条，13.827公里；村道公路620条，759.108公里。高速公路21.705公里，一级公路120.603公里，二级公路25.044公里，三级公路376.35公里，四级公路845.797公里。桥梁296座，总计23.773公里，隧道49座，总计20.707公里。 [7] 
+交通运营：截至2017年年底，客货运方面：全县客运企业4家，客运车辆166辆，班线46条；货运企业16家，货运车辆1342辆。
+驾培方面：全县驾校共4家，教练车274辆，驾培教练人员446名；
+公共交通方面：全县城乡公交现有车辆运营430辆（其中新能源15辆），运营线路207条（主线27条、支线15条、区间线165条），运营线路总长度达3023.44公里；丹城城区公交车辆191辆（其中新能源40辆），运营线路32 条（主线22条、支线10条），运营线路总长度333.3公里；石浦城区公交车辆70辆，运营线路10条，运营线路总长度96公里； [7] 
+出租车方面：全县出租车企业4家，出租车249辆。另外，个体经营户拥有3辆营运出租车。
+维修方面：全县共有维修经营业户248家，其中一类维修13家，二类维修37家，三类维修198家。
+渡轮：“石鹤汽渡（前往鹤浦等南部岛屿）、石浦渔港码头（前往檀头山岛和渔山岛以及环港游）
+岛屿通道：桥梁296座，总计23.773公里，隧道49座，总计20.707公里。其中，三门口跨海大桥（前往高塘岛）、蜊门港大桥（高塘前往鹤浦）、铜瓦门大桥（前往东门岛）。 [7] 
+
+港口：以西周、贤庠为重点的象山港，临港工业相配套的公用码头。
+石浦港集临港工业、海洋运输、旅游开发、渔用交易于一体的综合性港口。</p>
+						    </div>
+						</li>
+		                <li>
+		                    <span>地理位置</span>
+		                    <div class="div2">
+		                        <h1>地理位置</h1>
+		                        <p>象山县介于北纬28°51′18〞-29°39′42〞、东经121°34′03〞-122°17′30〞之间。位于浙江省东部沿海中段，宁波市的东南部，在象山港与三门湾之间。其地理位置北临象山港，与鄞州区、奉化区隔港相望；东北遥对舟山市普陀区的六横岛和宁波市北仑区的梅山岛；东濒大目洋；南接猫头洋，隔三门湾与台州市的三门县相峙；西连宁海县，象山半岛自宁海县紫溪、梅林至一市东延入海。象山处于象山半岛的东部，由象山半岛东部本土和沿海600多个岛礁组成，具有“三面环海，一线穿陆”的地理特征。</p>
+								<p>象山位于浙东丘陵的沿海地区，山地面积为793平方公里，占总面积的70%左右。县内大多是200米以下丘陵，坡度平缓，山岭起伏绵延。地形总体特征是丘多、山低、坡缓。
+		全县地势自西北向东南倾斜。天台山余脉自宁海县向东延伸至象山半岛，形成了县境西北部宁象交界处的最高部分。这些山峰，山体宏伟，峰峦迭起，主峰多在500米以上。其中东搬山由宁海县茶山蜿蜒而来，群峰绵亘，主峰海拔810．8米，为本县第一高峰。其东南有牛料岗，海拔756米，是本县第二高峰。周围有海拔300-700米的山峰20余座。
+		山地一般高200—450米，分布较广，县内主要有爵溪山地、黄避岙山地、南乡山地等3片。
+		象山县境东西最大距离为70公里，南北最大距离为90公里。陆地总面积1175平方公里，其中半岛部分为995平方公里，岛礁部分为180平方公里。
+		象山的平原大多散布于沿海地区，这些平原多由海湾促淤成滩，经过人工围涂而成，称为海积平原，主要分布在北部象山港、东部各海湾和南部三门湾。其特点是面积大、范围广，占象山平原的主导地位。其中南庄平原和定山平原面积最大，历有“上八万（亩）”、“下八万（亩）”之称。
+		此外，象山还有冲积平原，以山前冲积扇为主要形态。因境内山势矮小，腹地短浅，所以面积不大，以丹城、白石、九顷、梅溪一带比较典型。
+		洪积平原以溪谷平原为主要形态，形状多为狭长，大多地处溪谷。
+		象山溪河源短流促，独注入海。流域面积在20平方公里以上的水系有大塘港、南大河、淡港、西周港、下沈港、东塘河、樊岙港。其中大塘港水系位于定山平原，流域面积为134平方公里。干流大塘港原为三门湾内港，1975年堵口蓄淡成河，长18公里，平均宽500米。</p>
+		                    </div>
+		                </li>
+		                <li>
+		                    <span>气候特征</span>
+		                    <div class="div2">
+		                        <h1>气候特征</h1>
+		                        <p>象山县属于亚热带海洋性季风气候区，四季分明，冬无严寒，夏无酷暑，无霜期长（年平均约248天，生长期为345天），光照充足（年平均气温为16—17℃），温和湿润，雨量丰沛（年平均降水量1400mm以上）。但台风活动频繁，常伴有狂风暴雨，水系源短流急，独注入海，工程调蓄性能弱，而且河网密度低，潜伏旱涝灾害隐患。全县多年平均降雨量1463毫米，多年平均水资源径流总量9.33亿立方米，降雨径流时空分布呈现自西北东南递减，集中在梅雨、台风期间，为双峰型。年际变化极度偏离均衡，变幅最大为2.83，以及工程地质、地形、淹没移民和经济条件的限制，导致水资源开发利用困难。 [10] 
+		由于地形不同，县内西北部与东南部沿海地区在气温西北部比东南部石浦地区略高，年积温西北部超出6000℃；年降水量，即使在久旱年份，西北部山区都要超过东南部的石浦地区。</p>
+		                    </div>
+		                </li>
+		                <li>
+		                    <span>社会事业</span>
+		                    <div class="div2">
+		                        <h1>社会事业</h1>
+		                        <p>截至2018年，象山先后被评为国家级海洋渔文化（象山）生态保护实验区、中国渔文化之乡、中国民间文化艺术之乡（象山竹根雕）、浙江省文化先进县、浙江省体育强县、浙江文化名城、省非遗保护综合试点县、省非遗保护先进单位、省民间文化艺术之乡（象山农民画）等，石浦镇被列为首批全国历史文化名镇，连续举办二十一届的中国开渔节成为全国十大民俗节庆。</p>
+								<p>截止2017年12月，全县有幼儿园88所，早教中心1个；教育行政工作主要由教育局管理的学校81所，其中,小学28所（社会职业学校因校舍收回停办）,较2016年减少一所；初中10所；九年一贯制学校13所；高级中学、完全中学、职业学校各3所，特殊教育学校、素质教育实践学校各1所；宁波广播电视大学象山分校、县级教师培训机构（学校）、县成人教育中心.县社区学院各1所，镇级社区学院2所、乡镇成人学校14所。在幼儿园注册的幼儿及婴儿19853人，全县中小学与职业学校学生62725人，成人高校学员2811人。学前3年入园率99.70%。九年制义务教育学龄人口入学率、完成率100.0%（个别正常儿童病休），“三残”儿童少年入学率、完成率各为99.1%。完成9年义务教育后的学生升入高中段学校的比例98.81%，普通高中与中等职业学校招生比例为50.28：49.72。2017年教育完成率99.25%。</p>
+		                    </div>
+		                </li>
+						
+		            </ul>
+		        </div>
+		    </div>
+			
+		</div>
+		
+		<div class="clear"></div>
+		<div class="footer">
+			<ul class="foot_list">
+				<a href="javascript:scroll(0,0)"><h1 align="middle" >Copyright © 2021 CJLU/2000303224  E-mail:rqzhu777@163.com. All rights reserved.</h1></a>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/main_div.js">
+		
+	</script>
+</html>
